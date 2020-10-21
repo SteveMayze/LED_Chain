@@ -1,0 +1,178 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 4xxx:4027 U?
+U 2 1 5F9057B6
+P 2750 2950
+F 0 "U?" H 2900 2700 50  0000 C CNN
+F 1 "4027" H 2750 2950 50  0000 C CNN
+F 2 "" H 2750 2950 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4027bms.pdf" H 2750 2950 50  0001 C CNN
+	2    2750 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4xxx:4027 U?
+U 3 1 5F90647C
+P 2300 4650
+F 0 "U?" H 2350 4300 50  0000 L CNN
+F 1 "4027" H 2200 4650 50  0000 L CNN
+F 2 "" H 2300 4650 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4027bms.pdf" H 2300 4650 50  0001 C CNN
+	3    2300 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_GSD Q?
+U 1 1 5F908445
+P 5400 2250
+F 0 "Q?" H 5604 2296 50  0000 L CNN
+F 1 "Q_NMOS_GSD" H 5604 2205 50  0000 L CNN
+F 2 "" H 5600 2350 50  0001 C CNN
+F 3 "~" H 5400 2250 50  0001 C CNN
+	1    5400 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_GSD Q?
+U 1 1 5F9099D8
+P 5400 2900
+F 0 "Q?" H 5604 2946 50  0000 L CNN
+F 1 "Q_NMOS_GSD" H 5604 2855 50  0000 L CNN
+F 2 "" H 5600 3000 50  0001 C CNN
+F 3 "~" H 5400 2900 50  0001 C CNN
+	1    5400 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_GSD Q?
+U 1 1 5F90A446
+P 4400 3350
+F 0 "Q?" H 4604 3396 50  0000 L CNN
+F 1 "Q_NMOS_GSD" H 4604 3305 50  0000 L CNN
+F 2 "" H 4600 3450 50  0001 C CNN
+F 3 "~" H 4400 3350 50  0001 C CNN
+	1    4400 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_GSD Q?
+U 1 1 5F90ADD7
+P 4400 4050
+F 0 "Q?" H 4604 4096 50  0000 L CNN
+F 1 "Q_NMOS_GSD" H 4604 4005 50  0000 L CNN
+F 2 "" H 4600 4150 50  0001 C CNN
+F 3 "~" H 4400 4050 50  0001 C CNN
+	1    4400 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5F90B7FC
+P 7700 3550
+F 0 "D?" V 7647 3630 50  0000 L CNN
+F 1 "LED" V 7738 3630 50  0000 L CNN
+F 2 "" H 7700 3550 50  0001 C CNN
+F 3 "~" H 7700 3550 50  0001 C CNN
+	1    7700 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5F90BDFF
+P 8150 3550
+F 0 "D?" V 8189 3432 50  0000 R CNN
+F 1 "LED" V 8098 3432 50  0000 R CNN
+F 2 "" H 8150 3550 50  0001 C CNN
+F 3 "~" H 8150 3550 50  0001 C CNN
+	1    8150 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F90C82A
+P 4500 4650
+F 0 "R?" H 4570 4696 50  0000 L CNN
+F 1 "R" H 4570 4605 50  0000 L CNN
+F 2 "" V 4430 4650 50  0001 C CNN
+F 3 "~" H 4500 4650 50  0001 C CNN
+	1    4500 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F90D266
+P 5350 4700
+F 0 "R?" H 5420 4746 50  0000 L CNN
+F 1 "R" H 5420 4655 50  0000 L CNN
+F 2 "" V 5280 4700 50  0001 C CNN
+F 3 "~" H 5350 4700 50  0001 C CNN
+	1    5350 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F90D73E
+P 3950 4150
+F 0 "R?" H 4020 4196 50  0000 L CNN
+F 1 "R" H 4020 4105 50  0000 L CNN
+F 2 "" V 3880 4150 50  0001 C CNN
+F 3 "~" H 3950 4150 50  0001 C CNN
+	1    3950 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F90E1F8
+P 3600 4150
+F 0 "R?" H 3670 4196 50  0000 L CNN
+F 1 "R" H 3670 4105 50  0000 L CNN
+F 2 "" V 3530 4150 50  0001 C CNN
+F 3 "~" H 3600 4150 50  0001 C CNN
+	1    3600 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 2850 3200 2850
+Wire Wire Line
+	3050 3050 3200 3050
+Text Label 3200 2850 0    50   ~ 0
+Q
+Text Label 3200 3050 0    50   ~ 0
+~Q
+$Comp
+L Device:R R?
+U 1 1 5F916E87
+P 6850 3250
+F 0 "R?" V 6643 3250 50  0000 C CNN
+F 1 "R" V 6734 3250 50  0000 C CNN
+F 2 "" V 6780 3250 50  0001 C CNN
+F 3 "~" H 6850 3250 50  0001 C CNN
+	1    6850 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F917A36
+P 6850 4000
+F 0 "R?" V 6643 4000 50  0000 C CNN
+F 1 "R" V 6734 4000 50  0000 C CNN
+F 2 "" V 6780 4000 50  0001 C CNN
+F 3 "~" H 6850 4000 50  0001 C CNN
+	1    6850 4000
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC
