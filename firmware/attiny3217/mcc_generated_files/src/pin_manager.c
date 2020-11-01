@@ -32,7 +32,13 @@
 
 
 #include "../include/pin_manager.h"
+static void (*PORTC_FF_RESET_InterruptHandler)(void);
+static void (*PORTB_PB2_InterruptHandler)(void);
 static void (*PORTB_USER_LED0_InterruptHandler)(void);
+static void (*PORTC_FF_J_InterruptHandler)(void);
+static void (*PORTC_FF_SET_InterruptHandler)(void);
+static void (*PORTB_PB1_InterruptHandler)(void);
+static void (*PORTC_FF_K_InterruptHandler)(void);
 static void (*PORTB_PB0_InterruptHandler)(void);
 
 void PORT_Initialize(void);
@@ -43,8 +49,8 @@ void PIN_MANAGER_Initialize()
 
     /* DIR Registers Initialization */
     PORTA.DIR = 0x00;
-    PORTB.DIR = 0x11;
-    PORTC.DIR = 0x00;
+    PORTB.DIR = 0x17;
+    PORTC.DIR = 0x0F;
 
     /* OUT Registers Initialization */
     PORTA.OUT = 0x00;
@@ -84,7 +90,13 @@ void PIN_MANAGER_Initialize()
     PORTMUX.CTRLD = 0x00;
 
     // register default ISC callback functions at runtime; use these methods to register a custom function
+    PORTC_FF_RESET_SetInterruptHandler(PORTC_FF_RESET_DefaultInterruptHandler);
+    PORTB_PB2_SetInterruptHandler(PORTB_PB2_DefaultInterruptHandler);
     PORTB_USER_LED0_SetInterruptHandler(PORTB_USER_LED0_DefaultInterruptHandler);
+    PORTC_FF_J_SetInterruptHandler(PORTC_FF_J_DefaultInterruptHandler);
+    PORTC_FF_SET_SetInterruptHandler(PORTC_FF_SET_DefaultInterruptHandler);
+    PORTB_PB1_SetInterruptHandler(PORTB_PB1_DefaultInterruptHandler);
+    PORTC_FF_K_SetInterruptHandler(PORTC_FF_K_DefaultInterruptHandler);
     PORTB_PB0_SetInterruptHandler(PORTB_PB0_DefaultInterruptHandler);
 }
 
@@ -110,6 +122,32 @@ void PORT_Initialize(void)
 }
 
 /**
+  Allows selecting an interrupt handler for PORTC_FF_RESET at application runtime
+*/
+void PORTC_FF_RESET_SetInterruptHandler(void (* interruptHandler)(void)) 
+{
+    PORTC_FF_RESET_InterruptHandler = interruptHandler;
+}
+
+void PORTC_FF_RESET_DefaultInterruptHandler(void)
+{
+    // add your PORTC_FF_RESET interrupt custom code
+    // or set custom function using PORTC_FF_RESET_SetInterruptHandler()
+}
+/**
+  Allows selecting an interrupt handler for PORTB_PB2 at application runtime
+*/
+void PORTB_PB2_SetInterruptHandler(void (* interruptHandler)(void)) 
+{
+    PORTB_PB2_InterruptHandler = interruptHandler;
+}
+
+void PORTB_PB2_DefaultInterruptHandler(void)
+{
+    // add your PORTB_PB2 interrupt custom code
+    // or set custom function using PORTB_PB2_SetInterruptHandler()
+}
+/**
   Allows selecting an interrupt handler for PORTB_USER_LED0 at application runtime
 */
 void PORTB_USER_LED0_SetInterruptHandler(void (* interruptHandler)(void)) 
@@ -121,6 +159,58 @@ void PORTB_USER_LED0_DefaultInterruptHandler(void)
 {
     // add your PORTB_USER_LED0 interrupt custom code
     // or set custom function using PORTB_USER_LED0_SetInterruptHandler()
+}
+/**
+  Allows selecting an interrupt handler for PORTC_FF_J at application runtime
+*/
+void PORTC_FF_J_SetInterruptHandler(void (* interruptHandler)(void)) 
+{
+    PORTC_FF_J_InterruptHandler = interruptHandler;
+}
+
+void PORTC_FF_J_DefaultInterruptHandler(void)
+{
+    // add your PORTC_FF_J interrupt custom code
+    // or set custom function using PORTC_FF_J_SetInterruptHandler()
+}
+/**
+  Allows selecting an interrupt handler for PORTC_FF_SET at application runtime
+*/
+void PORTC_FF_SET_SetInterruptHandler(void (* interruptHandler)(void)) 
+{
+    PORTC_FF_SET_InterruptHandler = interruptHandler;
+}
+
+void PORTC_FF_SET_DefaultInterruptHandler(void)
+{
+    // add your PORTC_FF_SET interrupt custom code
+    // or set custom function using PORTC_FF_SET_SetInterruptHandler()
+}
+/**
+  Allows selecting an interrupt handler for PORTB_PB1 at application runtime
+*/
+void PORTB_PB1_SetInterruptHandler(void (* interruptHandler)(void)) 
+{
+    PORTB_PB1_InterruptHandler = interruptHandler;
+}
+
+void PORTB_PB1_DefaultInterruptHandler(void)
+{
+    // add your PORTB_PB1 interrupt custom code
+    // or set custom function using PORTB_PB1_SetInterruptHandler()
+}
+/**
+  Allows selecting an interrupt handler for PORTC_FF_K at application runtime
+*/
+void PORTC_FF_K_SetInterruptHandler(void (* interruptHandler)(void)) 
+{
+    PORTC_FF_K_InterruptHandler = interruptHandler;
+}
+
+void PORTC_FF_K_DefaultInterruptHandler(void)
+{
+    // add your PORTC_FF_K interrupt custom code
+    // or set custom function using PORTC_FF_K_SetInterruptHandler()
 }
 /**
   Allows selecting an interrupt handler for PORTB_PB0 at application runtime

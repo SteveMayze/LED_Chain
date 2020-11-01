@@ -22,7 +22,64 @@
 */
 
 #include "mcc_generated_files/mcc.h"
+#include "util/delay.h"
 
+
+void clk_change(uint16_t period, uint16_t duty)
+{
+     TCA0.SINGLE.CTRLA = 0x00;
+
+    //Compare 0
+    TCA0.SINGLE.CMP0BUF = duty;
+
+    //Period
+    TCA0.SINGLE.PERBUF = period;
+    TCA0.SINGLE.CTRLA = 0x09;
+
+}
+
+void run_anim(){
+        FF_RESET_SetLow();
+        FF_SET_SetLow();
+        
+        FF_J_SetHigh();
+        FF_K_SetHigh();
+        
+        _delay_ms(5000);
+
+        for( uint8_t i = 0; i<10; i++ ) {
+            FF_J_SetLow();
+            FF_K_SetHigh();
+
+            _delay_ms(500);
+
+            FF_J_SetHigh();
+            FF_K_SetLow();
+
+            _delay_ms(500);
+        }
+        
+        _delay_ms(5000);
+
+        FF_J_SetHigh();
+        FF_K_SetHigh();
+
+        for( uint8_t i = 0; i<10; i++ ) {
+
+            FF_RESET_SetHigh();
+            FF_SET_SetHigh();
+
+            _delay_ms(500);
+
+            FF_RESET_SetLow();
+            FF_SET_SetLow();
+            _delay_ms(500);
+        }
+        FF_RESET_SetHigh();
+        FF_SET_SetHigh();
+        
+        _delay_ms(10000);
+}
 /*
     Main application
 */
@@ -32,7 +89,18 @@ int main(void)
     SYSTEM_Initialize();
 
     /* Replace with your application code */
+    USER_LED0_SetHigh();
     while (1){
+        
+        run_anim();        
+        
+        clk_change(0x5161, 0x28b0);
+
+        run_anim();        
+
+        TCA0_Initialize();
+        
+        USER_LED0_Toggle();
     }
 }
 /**
