@@ -43,6 +43,7 @@ void SYSTEM_Initialize(void)
     //CPU_Initialize();
     CLKCTRL_Initialize();
     SLPCTRL_Initialize();
+    TCA0_Initialize();
     CPUINT_Initialize();
 }
 
