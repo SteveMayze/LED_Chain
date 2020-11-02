@@ -25,28 +25,41 @@
 #include "util/delay.h"
 
 
+uint16_t calculate_period(uint16_t frequency) {
+    uint8_t div_reg = (TCA0.SINGLE.CTRLA & 0x0F) >> 1;
+
+    uint8_t div = 1;
+    if (div_reg != 0){
+        div = (1 << div_reg );
+    };
+    uint16_t period = F_CPU / ( 2 * div * frequency );
+    return period;
+}
+
 void clk_change(uint16_t period, uint16_t duty)
 {
-     TCA0.SINGLE.CTRLA = 0x00;
+    // TCA0.SINGLE.CTRLA = 0x00;
 
-    //Compare 0
+    // Duty
     TCA0.SINGLE.CMP0BUF = duty;
 
     //Period
     TCA0.SINGLE.PERBUF = period;
+    // Div 16
     TCA0.SINGLE.CTRLA = 0x09;
 
 }
 
 void run_anim(){
+        // All ON
         FF_RESET_SetLow();
         FF_SET_SetLow();
-        
         FF_J_SetHigh();
         FF_K_SetHigh();
         
-        _delay_ms(5000);
+        _delay_ms(10000);
 
+        // Side to side blink
         for( uint8_t i = 0; i<10; i++ ) {
             FF_J_SetLow();
             FF_K_SetHigh();
@@ -59,11 +72,14 @@ void run_anim(){
             _delay_ms(500);
         }
         
-        _delay_ms(5000);
-
+        // All OFF
+        FF_RESET_SetHigh();
+        FF_SET_SetHigh();
         FF_J_SetHigh();
         FF_K_SetHigh();
+        _delay_ms(5000);
 
+        // All blink in unison
         for( uint8_t i = 0; i<10; i++ ) {
 
             FF_RESET_SetHigh();
@@ -75,10 +91,23 @@ void run_anim(){
             FF_SET_SetLow();
             _delay_ms(500);
         }
+        // All OFF
         FF_RESET_SetHigh();
         FF_SET_SetHigh();
         
-        _delay_ms(10000);
+        _delay_ms(1000);
+}
+
+
+void blink_led(uint8_t times) {
+    USER_LED0_SetHigh();
+    for( uint8_t cnt = 0; cnt < times; cnt++){
+        USER_LED0_SetLow();
+        _delay_ms(500);
+        USER_LED0_SetHigh();    
+        _delay_ms(500);
+    }    
+    USER_LED0_SetHigh();
 }
 /*
     Main application
@@ -92,15 +121,23 @@ int main(void)
     USER_LED0_SetHigh();
     while (1){
         
+        blink_led(1);
+        run_anim();       
+
+        blink_led(2);
+        uint16_t period = calculate_period(1);
+        uint16_t duty = period/2;
+        clk_change(period, duty);
         run_anim();        
-        
-        clk_change(0x5161, 0x28b0);
+
+        blink_led(3);
+        period = calculate_period(20);
+        duty = period/2;
+        clk_change(period, duty);
 
         run_anim();        
 
         TCA0_Initialize();
-        
-        USER_LED0_Toggle();
     }
 }
 /**
