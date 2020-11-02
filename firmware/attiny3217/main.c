@@ -25,20 +25,19 @@
 #include "util/delay.h"
 
 
-uint16_t calculate_period(uint16_t frequency) {
-    uint8_t div_reg = (TCA0.SINGLE.CTRLA & 0x0F) >> 1;
+uint16_t calculate_period(uint16_t frequency, uint8_t new_div) {
+    //    uint8_t div_reg = (TCA0.SINGLE.CTRLA & 0x0F) >> 1;
 
-    uint8_t div = 1;
-    if (div_reg != 0){
-        div = (1 << div_reg );
-    };
-    uint16_t period = F_CPU / ( 2 * div * frequency );
+    uint16_t prescale[] = {1, 2, 4, 8, 16, 64, 256, 1024};
+    volatile uint16_t div = prescale[new_div];
+
+    volatile uint16_t period = F_CPU / ( div * frequency );
     return period;
 }
 
-void clk_change(uint16_t period, uint16_t duty)
+void clk_change(uint16_t period, uint16_t duty, uint8_t div)
 {
-    // TCA0.SINGLE.CTRLA = 0x00;
+    TCA0.SINGLE.CTRLA = 0x00;
 
     // Duty
     TCA0.SINGLE.CMP0BUF = duty;
@@ -46,7 +45,7 @@ void clk_change(uint16_t period, uint16_t duty)
     //Period
     TCA0.SINGLE.PERBUF = period;
     // Div 16
-    TCA0.SINGLE.CTRLA = 0x09;
+    TCA0.SINGLE.CTRLA = (div << 1 )| 0x01;
 
 }
 
@@ -125,15 +124,15 @@ int main(void)
         run_anim();       
 
         blink_led(2);
-        uint16_t period = calculate_period(1);
+        uint16_t period = calculate_period(5, 5);
         uint16_t duty = period/2;
-        clk_change(period, duty);
+        clk_change(period, duty, 5);
         run_anim();        
 
         blink_led(3);
-        period = calculate_period(20);
+        period = calculate_period(10, 5);
         duty = period/2;
-        clk_change(period, duty);
+        clk_change(period, duty, 5);
 
         run_anim();        
 
