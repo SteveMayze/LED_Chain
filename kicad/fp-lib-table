@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name LED_Chain)(type KiCad)(uri ${LOCAL_PCBS}/LED_Chain/kicad/lib/LED_Chain.pretty)(options "")(descr ""))
+)
