@@ -27,12 +27,12 @@ $EndComp
 $Comp
 L 4xxx:4027 U1
 U 3 1 5F90647C
-P 5700 4750
-F 0 "U1" H 5750 4400 50  0000 L CNN
-F 1 "HCF4027B" H 5750 4300 50  0000 L CNN
-F 2 "SMD_Packages:SO-16-N" H 5700 4750 50  0001 C CNN
-F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4027bms.pdf" H 5700 4750 50  0001 C CNN
-	3    5700 4750
+P 5500 4400
+F 0 "U1" H 5550 4050 50  0000 L CNN
+F 1 "HCF4027B" H 5550 3950 50  0000 L CNN
+F 2 "SMD_Packages:SO-16-N" H 5500 4400 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4027bms.pdf" H 5500 4400 50  0001 C CNN
+	3    5500 4400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -210,11 +210,11 @@ Wire Wire Line
 Text Label 1850 2150 0    50   ~ 0
 CLK
 Text Label 1250 1900 0    50   ~ 0
-K
-Text Label 1950 2600 0    50   ~ 0
-RESET
+FF_K
+Text Label 1850 2600 0    50   ~ 0
+FF_RESET
 Text Label 1400 950  0    50   ~ 0
-SET
+FF_SET
 Wire Wire Line
 	5450 2850 5450 2900
 Wire Wire Line
@@ -250,21 +250,21 @@ $EndComp
 $Comp
 L power:GND #PWR010
 U 1 1 5F956AA7
-P 5700 5300
-F 0 "#PWR010" H 5700 5050 50  0001 C CNN
-F 1 "GND" H 5705 5127 50  0000 C CNN
-F 2 "" H 5700 5300 50  0001 C CNN
-F 3 "" H 5700 5300 50  0001 C CNN
-	1    5700 5300
+P 5500 4950
+F 0 "#PWR010" H 5500 4700 50  0001 C CNN
+F 1 "GND" H 5505 4777 50  0000 C CNN
+F 2 "" H 5500 4950 50  0001 C CNN
+F 3 "" H 5500 4950 50  0001 C CNN
+	1    5500 4950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5700 5150 5700 5300
+	5500 4800 5500 4950
 Wire Wire Line
-	5700 4350 5700 4200
+	5500 4000 5500 3850
 Wire Wire Line
-	5700 4200 5250 4200
-Text Label 5050 4200 0    50   ~ 0
+	5500 3850 5050 3850
+Text Label 4850 3850 0    50   ~ 0
 Vbb
 Text Label 5300 1450 0    50   ~ 0
 Vdd
@@ -275,10 +275,10 @@ Wire Wire Line
 Wire Wire Line
 	8050 2300 8150 2300
 $Comp
-L Connector:Conn_01x01_Female J2
+L Connector:Conn_01x01_Female J7
 U 1 1 5F981829
 P 8350 1800
-F 0 "J2" H 8378 1826 50  0000 L CNN
+F 0 "J7" H 8378 1826 50  0000 L CNN
 F 1 "L1" H 8378 1735 50  0000 L CNN
 F 2 "Connect:Banana_Jack_1Pin" H 8350 1800 50  0001 C CNN
 F 3 "~" H 8350 1800 50  0001 C CNN
@@ -286,10 +286,10 @@ F 3 "~" H 8350 1800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x01_Female J3
+L Connector:Conn_01x01_Female J8
 U 1 1 5F981CC7
 P 8350 2300
-F 0 "J3" H 8378 2326 50  0000 L CNN
+F 0 "J8" H 8378 2326 50  0000 L CNN
 F 1 "L2" H 8378 2235 50  0000 L CNN
 F 2 "Connect:Banana_Jack_1Pin" H 8350 2300 50  0001 C CNN
 F 3 "~" H 8350 2300 50  0001 C CNN
@@ -297,44 +297,42 @@ F 3 "~" H 8350 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2150 5150 2150 5300
+	1700 5150 1700 5300
 $Comp
 L power:GND #PWR04
 U 1 1 5F98DB74
-P 2150 5300
-F 0 "#PWR04" H 2150 5050 50  0001 C CNN
-F 1 "GND" H 2155 5127 50  0000 C CNN
-F 2 "" H 2150 5300 50  0001 C CNN
-F 3 "" H 2150 5300 50  0001 C CNN
-	1    2150 5300
+P 1700 5300
+F 0 "#PWR04" H 1700 5050 50  0001 C CNN
+F 1 "GND" H 1705 5127 50  0000 C CNN
+F 2 "" H 1700 5300 50  0001 C CNN
+F 3 "" H 1700 5300 50  0001 C CNN
+	1    1700 5300
 	1    0    0    -1  
 $EndComp
-Text Label 2150 4650 2    50   ~ 0
+Text Label 1850 4650 2    50   ~ 0
 CLK
-Text Label 2150 4850 2    50   ~ 0
-K
-Text Label 2150 4950 2    50   ~ 0
-J
-Text Label 2150 4750 2    50   ~ 0
-RESET
-Text Label 2150 5050 2    50   ~ 0
-SET
-Text Label 2850 4450 2    50   ~ 0
+Text Label 1850 4850 2    50   ~ 0
+FF_K
+Text Label 1850 4950 2    50   ~ 0
+FF_J
+Text Label 1850 4750 2    50   ~ 0
+FF_RESET
+Text Label 1850 5050 2    50   ~ 0
+FF_SET
+Text Label 3000 4450 2    50   ~ 0
 Vdd
 Wire Wire Line
-	1450 5150 2150 5150
+	1450 5150 1700 5150
 Wire Wire Line
-	1450 5050 2150 5050
+	1450 5050 1850 5050
 Wire Wire Line
-	1450 4950 2150 4950
+	1450 4950 1850 4950
 Wire Wire Line
-	1450 4850 2150 4850
+	1450 4850 1850 4850
 Wire Wire Line
-	1450 4750 2150 4750
+	1450 4750 1850 4750
 Wire Wire Line
-	1450 4650 2150 4650
-Wire Wire Line
-	1450 4450 2600 4450
+	1450 4650 1850 4650
 $Comp
 L Device:R R7
 U 1 1 5F95BC79
@@ -398,30 +396,30 @@ Connection ~ 2900 2250
 $Comp
 L Device:C C2
 U 1 1 5F98A5ED
-P 5250 4550
-F 0 "C2" H 5100 4650 50  0000 L CNN
-F 1 "100 nF" H 4950 4450 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 5288 4400 50  0001 C CNN
-F 3 "~" H 5250 4550 50  0001 C CNN
-	1    5250 4550
+P 5050 4200
+F 0 "C2" H 4900 4300 50  0000 L CNN
+F 1 "100 nF" H 4750 4100 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 5088 4050 50  0001 C CNN
+F 3 "~" H 5050 4200 50  0001 C CNN
+	1    5050 4200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5250 4200 5250 4400
+	5050 3850 5050 4050
 Wire Wire Line
-	5250 4700 5250 4900
-Connection ~ 5250 4200
+	5050 4350 5050 4550
+Connection ~ 5050 3850
 Wire Wire Line
-	5250 4200 5050 4200
+	5050 3850 4850 3850
 $Comp
 L power:GND #PWR07
 U 1 1 5F98C5D7
-P 5250 4900
-F 0 "#PWR07" H 5250 4650 50  0001 C CNN
-F 1 "GND" H 5255 4727 50  0000 C CNN
-F 2 "" H 5250 4900 50  0001 C CNN
-F 3 "" H 5250 4900 50  0001 C CNN
-	1    5250 4900
+P 5050 4550
+F 0 "#PWR07" H 5050 4300 50  0001 C CNN
+F 1 "GND" H 5055 4377 50  0000 C CNN
+F 2 "" H 5050 4550 50  0001 C CNN
+F 3 "" H 5050 4550 50  0001 C CNN
+	1    5050 4550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -449,62 +447,62 @@ $EndComp
 $Comp
 L 74xx:74LS04 U2
 U 7 1 5FA22306
-P 5700 6400
-F 0 "U2" H 5930 6446 50  0000 L CNN
-F 1 "74LS04" H 5930 6355 50  0000 L CNN
-F 2 "LED_Chain:SOIC-14" H 5700 6400 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 5700 6400 50  0001 C CNN
-	7    5700 6400
+P 5500 6050
+F 0 "U2" H 5730 6096 50  0000 L CNN
+F 1 "74LS04" H 5730 6005 50  0000 L CNN
+F 2 "LED_Chain:SOIC-14" H 5500 6050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 5500 6050 50  0001 C CNN
+	7    5500 6050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5700 5900 5700 5800
+	5500 5550 5500 5450
 Wire Wire Line
-	5700 5800 5250 5800
-Text Label 5050 5800 0    50   ~ 0
+	5500 5450 5050 5450
+Text Label 4850 5450 0    50   ~ 0
 Vbb
 $Comp
 L Device:C C3
 U 1 1 5FA25BC0
-P 5250 6150
-F 0 "C3" H 5100 6250 50  0000 L CNN
-F 1 "100 nF" H 4950 6050 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 5288 6000 50  0001 C CNN
-F 3 "~" H 5250 6150 50  0001 C CNN
-	1    5250 6150
+P 5050 5800
+F 0 "C3" H 4900 5900 50  0000 L CNN
+F 1 "100 nF" H 4750 5700 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 5088 5650 50  0001 C CNN
+F 3 "~" H 5050 5800 50  0001 C CNN
+	1    5050 5800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5250 5800 5250 6000
+	5050 5450 5050 5650
 Wire Wire Line
-	5250 6300 5250 6500
+	5050 5950 5050 6150
 $Comp
 L power:GND #PWR08
 U 1 1 5FA25EF8
-P 5250 6500
-F 0 "#PWR08" H 5250 6250 50  0001 C CNN
-F 1 "GND" H 5255 6327 50  0000 C CNN
-F 2 "" H 5250 6500 50  0001 C CNN
-F 3 "" H 5250 6500 50  0001 C CNN
-	1    5250 6500
+P 5050 6150
+F 0 "#PWR08" H 5050 5900 50  0001 C CNN
+F 1 "GND" H 5055 5977 50  0000 C CNN
+F 2 "" H 5050 6150 50  0001 C CNN
+F 3 "" H 5050 6150 50  0001 C CNN
+	1    5050 6150
 	1    0    0    -1  
 $EndComp
-Connection ~ 5250 5800
+Connection ~ 5050 5450
 Wire Wire Line
-	5250 5800 5050 5800
+	5050 5450 4850 5450
 $Comp
 L power:GND #PWR011
 U 1 1 5FA27AD9
-P 5700 7000
-F 0 "#PWR011" H 5700 6750 50  0001 C CNN
-F 1 "GND" H 5705 6827 50  0000 C CNN
-F 2 "" H 5700 7000 50  0001 C CNN
-F 3 "" H 5700 7000 50  0001 C CNN
-	1    5700 7000
+P 5500 6650
+F 0 "#PWR011" H 5500 6400 50  0001 C CNN
+F 1 "GND" H 5505 6477 50  0000 C CNN
+F 2 "" H 5500 6650 50  0001 C CNN
+F 3 "" H 5500 6650 50  0001 C CNN
+	1    5500 6650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5700 7000 5700 6900
+	5500 6650 5500 6550
 Wire Wire Line
 	3100 2250 3100 2600
 Wire Wire Line
@@ -540,10 +538,10 @@ F 3 "~" H 2250 2850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR05
+L power:GND #PWR06
 U 1 1 5FA40EFD
 P 2250 3100
-F 0 "#PWR05" H 2250 2850 50  0001 C CNN
+F 0 "#PWR06" H 2250 2850 50  0001 C CNN
 F 1 "GND" H 2255 2927 50  0000 C CNN
 F 2 "" H 2250 3100 50  0001 C CNN
 F 3 "" H 2250 3100 50  0001 C CNN
@@ -574,51 +572,47 @@ Wire Wire Line
 	2250 3000 2250 3100
 Connection ~ 2250 2600
 Wire Wire Line
-	2250 2600 1950 2600
+	2250 2600 1850 2600
 $Comp
 L Connector:Conn_01x08_Male J1
 U 1 1 5FA505DA
 P 1250 4750
 F 0 "J1" H 1358 5231 50  0000 C CNN
-F 1 "Conn_01x08_Male" H 1358 5140 50  0000 C CNN
+F 1 "Interface" H 1358 5140 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Angled_1x08_Pitch2.54mm" H 1250 4750 50  0001 C CNN
 F 3 "~" H 1250 4750 50  0001 C CNN
 	1    1250 4750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1450 4550 2150 4550
-Text Label 2150 4550 2    50   ~ 0
+Text Label 2350 4550 2    50   ~ 0
 Vbb
 $Comp
 L Device:C C1
 U 1 1 5FA5A175
-P 2600 4700
-F 0 "C1" H 2450 4800 50  0000 L CNN
-F 1 "1 μF" H 2300 4600 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 2638 4550 50  0001 C CNN
-F 3 "~" H 2600 4700 50  0001 C CNN
-	1    2600 4700
+P 2750 4700
+F 0 "C1" H 2600 4800 50  0000 L CNN
+F 1 "1 μF" H 2450 4600 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 2788 4550 50  0001 C CNN
+F 3 "~" H 2750 4700 50  0001 C CNN
+	1    2750 4700
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR06
+L power:GND #PWR05
 U 1 1 5FA5A79C
-P 2600 4950
-F 0 "#PWR06" H 2600 4700 50  0001 C CNN
-F 1 "GND" H 2605 4777 50  0000 C CNN
-F 2 "" H 2600 4950 50  0001 C CNN
-F 3 "" H 2600 4950 50  0001 C CNN
-	1    2600 4950
+P 2750 4950
+F 0 "#PWR05" H 2750 4700 50  0001 C CNN
+F 1 "GND" H 2755 4777 50  0000 C CNN
+F 2 "" H 2750 4950 50  0001 C CNN
+F 3 "" H 2750 4950 50  0001 C CNN
+	1    2750 4950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2600 4450 2600 4550
+	2750 4450 2750 4550
 Wire Wire Line
-	2600 4850 2600 4950
-Connection ~ 2600 4450
-Wire Wire Line
-	2600 4450 2850 4450
+	2750 4850 2750 4950
+Connection ~ 2750 4450
 $Comp
 L Device:R R1
 U 1 1 5FA5E8ED
@@ -679,7 +673,7 @@ Connection ~ 850  1800
 Wire Wire Line
 	850  1800 700  1800
 Text Label 700  1800 0    50   ~ 0
-J
+FF_J
 Wire Wire Line
 	1800 2250 1800 1900
 Wire Wire Line
@@ -690,15 +684,157 @@ Connection ~ 1450 1900
 Wire Wire Line
 	1450 1900 1250 1900
 Wire Wire Line
-	2900 1300 2650 1300
-Wire Wire Line
-	2900 1300 2900 1600
-Wire Wire Line
-	3300 1200 2650 1200
+	2900 1200 2900 1600
 Wire Wire Line
 	3300 1200 3300 1600
-Text Label 2650 1300 0    50   ~ 0
-Vbb
 Text Label 2650 1200 0    50   ~ 0
 Vbb
+$Comp
+L Connector:Conn_01x04_Male J5
+U 1 1 5FA85238
+P 7750 5050
+F 0 "J5" H 7722 5024 50  0000 R CNN
+F 1 "NeoPixel R1 C" H 7722 4933 50  0000 R CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 7750 5050 50  0001 C CNN
+F 3 "~" H 7750 5050 50  0001 C CNN
+	1    7750 5050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J4
+U 1 1 5FA870C1
+P 7750 4650
+F 0 "J4" H 7722 4624 50  0000 R CNN
+F 1 "NeoPixel R1 B" H 7722 4533 50  0000 R CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 7750 4650 50  0001 C CNN
+F 3 "~" H 7750 4650 50  0001 C CNN
+	1    7750 4650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J3
+U 1 1 5FA916E0
+P 7750 4350
+F 0 "J3" H 7722 4374 50  0000 R CNN
+F 1 "NeoPixel R1 A" H 7722 4283 50  0000 R CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 7750 4350 50  0001 C CNN
+F 3 "~" H 7750 4350 50  0001 C CNN
+	1    7750 4350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 4550 6850 4550
+Wire Wire Line
+	7550 4650 6850 4650
+Wire Wire Line
+	7550 4750 6850 4750
+Wire Wire Line
+	7550 4850 6850 4850
+Wire Wire Line
+	7550 4950 6850 4950
+Wire Wire Line
+	7550 5050 6850 5050
+Wire Wire Line
+	7550 5250 6850 5250
+Wire Wire Line
+	7550 4250 6850 4250
+Wire Wire Line
+	7550 4350 6850 4350
+Wire Wire Line
+	7550 4450 6850 4450
+Text Label 7350 4550 0    50   ~ 0
+A4
+Text Label 7350 4650 0    50   ~ 0
+A5
+Text Label 7350 4750 0    50   ~ 0
+A6
+Text Label 7350 4850 0    50   ~ 0
+A7
+Text Label 7350 4950 0    50   ~ 0
+B3
+Text Label 7350 5050 0    50   ~ 0
+B2
+Text Label 7350 5150 0    50   ~ 0
+B1
+Text Label 7350 5250 0    50   ~ 0
+B0
+Text Label 7350 4250 0    50   ~ 0
+A3
+Text Label 7350 4350 0    50   ~ 0
+A2
+Text Label 7350 4450 0    50   ~ 0
+A1
+Wire Wire Line
+	3450 5550 3200 5550
+Text Label 3200 5650 0    50   ~ 0
+Vdd
+Wire Wire Line
+	3450 5650 3200 5650
+Wire Wire Line
+	7550 5350 6850 5350
+Wire Wire Line
+	7550 5450 6850 5450
+Text Label 7350 5350 0    50   ~ 0
+5V
+Text Label 7350 5450 0    50   ~ 0
+GND
+$Comp
+L Connector:Conn_01x02_Male J6
+U 1 1 5FAE3734
+P 7750 5350
+F 0 "J6" H 7722 5324 50  0000 R CNN
+F 1 "NeoPixel R1 D" H 7722 5233 50  0000 R CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 7750 5350 50  0001 C CNN
+F 3 "~" H 7750 5350 50  0001 C CNN
+	1    7750 5350
+	-1   0    0    -1  
+$EndComp
+Text Label 3200 5550 0    50   ~ 0
+Vbb
+$Comp
+L Connector:Conn_01x02_Male J2
+U 1 1 5FAE8623
+P 3650 5550
+F 0 "J2" H 3622 5524 50  0000 R CNN
+F 1 "PWR" H 3622 5433 50  0000 R CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 3650 5550 50  0001 C CNN
+F 3 "~" H 3650 5550 50  0001 C CNN
+	1    3650 5550
+	-1   0    0    -1  
+$EndComp
+Text Notes 6950 4150 0    50   ~ 0
+Interface to the NeoPixel R 2L_1
+Text Notes 2900 5850 0    50   ~ 0
+Jumper for common Vbb and Vdd
+Wire Wire Line
+	7550 5150 6850 5150
+Text Label 6850 5250 0    50   ~ 0
+CLK
+Text Label 6850 4350 0    50   ~ 0
+FF_J
+Text Label 6850 4250 0    50   ~ 0
+FF_K
+Text Label 6850 4450 0    50   ~ 0
+FF_SET
+Text Label 6850 4550 0    50   ~ 0
+FF_RESET
+Text Label 6850 5350 0    50   ~ 0
+Vdd
+NoConn ~ 6850 4650
+NoConn ~ 6850 4750
+NoConn ~ 6850 4850
+NoConn ~ 6850 4950
+NoConn ~ 6850 5050
+NoConn ~ 6850 5150
+Wire Wire Line
+	2750 4450 3000 4450
+Wire Wire Line
+	2650 1200 2900 1200
+Connection ~ 2900 1200
+Wire Wire Line
+	2900 1200 3300 1200
+Wire Wire Line
+	1450 4450 2750 4450
+Wire Wire Line
+	1450 4550 2350 4550
 $EndSCHEMATC
