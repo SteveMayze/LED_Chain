@@ -128,23 +128,23 @@ Text Label 4400 2600 2    50   ~ 0
 $Comp
 L Device:R R13
 U 1 1 5F916E87
-P 7900 1800
-F 0 "R13" V 7693 1800 50  0000 C CNN
-F 1 "0 Ω" V 7784 1800 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 7830 1800 50  0001 C CNN
-F 3 "~" H 7900 1800 50  0001 C CNN
-	1    7900 1800
+P 8450 2000
+F 0 "R13" V 8243 2000 50  0000 C CNN
+F 1 "0 Ω" V 8334 2000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 8380 2000 50  0001 C CNN
+F 3 "~" H 8450 2000 50  0001 C CNN
+	1    8450 2000
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R14
 U 1 1 5F917A36
-P 7900 2300
-F 0 "R14" V 7693 2300 50  0000 C CNN
-F 1 "0 Ω" V 7784 2300 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 7830 2300 50  0001 C CNN
-F 3 "~" H 7900 2300 50  0001 C CNN
-	1    7900 2300
+P 8450 2100
+F 0 "R14" V 8650 2100 50  0000 C CNN
+F 1 "0 Ω" V 8550 2100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 8380 2100 50  0001 C CNN
+F 3 "~" H 8450 2100 50  0001 C CNN
+	1    8450 2100
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -184,12 +184,12 @@ Connection ~ 5450 2000
 Wire Wire Line
 	5450 2000 5450 2100
 Wire Wire Line
-	7750 2300 7450 2300
+	8300 2100 8050 2100
 Wire Wire Line
-	7750 1800 7500 1800
-Text Label 7500 1800 0    50   ~ 0
+	8300 2000 8050 2000
+Text Label 8050 2000 0    50   ~ 0
 L1
-Text Label 7450 2300 0    50   ~ 0
+Text Label 8050 2100 0    50   ~ 0
 L2
 Text Label 7000 2000 0    50   ~ 0
 L1
@@ -271,31 +271,9 @@ Vdd
 Text Label 6650 1450 0    50   ~ 0
 Vdd
 Wire Wire Line
-	8050 1800 8150 1800
+	8600 2000 9100 2000
 Wire Wire Line
-	8050 2300 8150 2300
-$Comp
-L Connector:Conn_01x01_Female J7
-U 1 1 5F981829
-P 8350 1800
-F 0 "J7" H 8378 1826 50  0000 L CNN
-F 1 "L1" H 8378 1735 50  0000 L CNN
-F 2 "Connect:Banana_Jack_1Pin" H 8350 1800 50  0001 C CNN
-F 3 "~" H 8350 1800 50  0001 C CNN
-	1    8350 1800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x01_Female J8
-U 1 1 5F981CC7
-P 8350 2300
-F 0 "J8" H 8378 2326 50  0000 L CNN
-F 1 "L2" H 8378 2235 50  0000 L CNN
-F 2 "Connect:Banana_Jack_1Pin" H 8350 2300 50  0001 C CNN
-F 3 "~" H 8350 2300 50  0001 C CNN
-	1    8350 2300
-	1    0    0    -1  
-$EndComp
+	8600 2100 9100 2100
 Wire Wire Line
 	1700 5150 1700 5300
 $Comp
@@ -837,4 +815,19 @@ Wire Wire Line
 	1450 4450 2750 4450
 Wire Wire Line
 	1450 4550 2350 4550
+$Comp
+L Connector:Conn_01x02_Female J7
+U 1 1 5FAA49F0
+P 9300 2000
+F 0 "J7" H 9328 1976 50  0000 L CNN
+F 1 "LED" H 9328 1885 50  0000 L CNN
+F 2 "LED_Chain:TerminalBlock_bornier-2_P5.08mm" H 9300 2000 50  0001 C CNN
+F 3 "~" H 9300 2000 50  0001 C CNN
+	1    9300 2000
+	1    0    0    -1  
+$EndComp
+Text Label 8750 2000 0    50   ~ 0
+LED1
+Text Label 8750 2100 0    50   ~ 0
+LED2
 $EndSCHEMATC
