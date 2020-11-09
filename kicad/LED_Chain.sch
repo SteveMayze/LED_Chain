@@ -424,24 +424,24 @@ F 3 "" H 5050 4550 50  0001 C CNN
 $EndComp
 $Comp
 L 74xx:74LS04 U2
-U 1 1 5FA1C3A1
+U 6 1 5FA1C3A1
 P 3800 2050
 F 0 "U2" H 3800 2367 50  0000 C CNN
 F 1 "74LS04" H 3800 2276 50  0000 C CNN
 F 2 "LED_Chain:SOIC-14" H 3800 2050 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 3800 2050 50  0001 C CNN
-	1    3800 2050
+	6    3800 2050
 	1    0    0    -1  
 $EndComp
 $Comp
 L 74xx:74LS04 U2
-U 2 1 5FA1F249
+U 5 1 5FA1F249
 P 3800 2600
 F 0 "U2" H 3800 2917 50  0000 C CNN
 F 1 "74LS04" H 3800 2826 50  0000 C CNN
 F 2 "LED_Chain:SOIC-14" H 3800 2600 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 3800 2600 50  0001 C CNN
-	2    3800 2600
+	5    3800 2600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -671,8 +671,8 @@ Wire Wire Line
 	1850 1800 850  1800
 Connection ~ 850  1800
 Wire Wire Line
-	850  1800 700  1800
-Text Label 700  1800 0    50   ~ 0
+	850  1800 600  1800
+Text Label 600  1800 0    50   ~ 0
 FF_J
 Wire Wire Line
 	1800 2250 1800 1900
@@ -750,13 +750,13 @@ Text Label 7350 4750 0    50   ~ 0
 A6
 Text Label 7350 4850 0    50   ~ 0
 A7
-Text Label 7350 4950 0    50   ~ 0
-B3
-Text Label 7350 5050 0    50   ~ 0
-B2
-Text Label 7350 5150 0    50   ~ 0
-B1
 Text Label 7350 5250 0    50   ~ 0
+B3
+Text Label 7350 5150 0    50   ~ 0
+B2
+Text Label 7350 5050 0    50   ~ 0
+B1
+Text Label 7350 4950 0    50   ~ 0
 B0
 Text Label 7350 4250 0    50   ~ 0
 A3
@@ -776,7 +776,7 @@ Wire Wire Line
 	7550 5450 6850 5450
 Text Label 7350 5350 0    50   ~ 0
 5V
-Text Label 7350 5450 0    50   ~ 0
+Text Label 6850 5450 0    50   ~ 0
 GND
 $Comp
 L Connector:Conn_01x02_Male J6
@@ -808,7 +808,7 @@ Text Notes 2900 5850 0    50   ~ 0
 Jumper for common Vbb and Vdd
 Wire Wire Line
 	7550 5150 6850 5150
-Text Label 6850 5250 0    50   ~ 0
+Text Label 6850 4950 0    50   ~ 0
 CLK
 Text Label 6850 4350 0    50   ~ 0
 FF_J
@@ -823,7 +823,7 @@ Vdd
 NoConn ~ 6850 4650
 NoConn ~ 6850 4750
 NoConn ~ 6850 4850
-NoConn ~ 6850 4950
+NoConn ~ 6850 5250
 NoConn ~ 6850 5050
 NoConn ~ 6850 5150
 Wire Wire Line
