@@ -17,12 +17,12 @@
          <string>class com.microchip.mcc.mcu8.systemManager.tiny_mega_init.wdt.WDT</string>
       </entry>
       <entry>
-         <string>TCA0</string>
-         <string>class com.microchip.mcc.mcu8.modules.tca.tiny_mega_init.TCA</string>
-      </entry>
-      <entry>
          <string>Pin Module</string>
          <string>class com.microchip.mcc.mcu8.pinManager.PinManager</string>
+      </entry>
+      <entry>
+         <string>TCA0</string>
+         <string>class com.microchip.mcc.mcu8.modules.tca.tiny_mega_init.TCA</string>
       </entry>
       <entry>
          <string>SLPCTRL</string>
@@ -2591,11 +2591,11 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="Custom Name PA1"/>
-         <value>FF_J</value>
+         <value>FF_SET</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="Custom Name PA2"/>
-         <value>FF_K</value>
+         <value>FF_J</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="TCA0" registerAlias="TCA_SINGLE_CTRLD"/>
@@ -2731,7 +2731,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="Custom Name PA3"/>
-         <value>FF_SET</value>
+         <value>FF_K</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="Custom Name PA4"/>
@@ -4777,7 +4777,7 @@
       </entry>
       <entry>
          <file>mcc_generated_files\include\pin_manager.h</file>
-         <hash>2d7bfe754e004b2209777fad7de9f2d7b32f805289b9a227f2c2afa2b9cccde4</hash>
+         <hash>fac215081d41b51137dc44c5e7232a5d1099e2cf8164be951d71a52aed8bff4c</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\mcc.h</file>
@@ -4809,7 +4809,7 @@
       </entry>
       <entry>
          <file>mcc_generated_files\src\pin_manager.c</file>
-         <hash>081670bf7c591b5d27953578a128ecdaaac4e614c13ca6391d82e973aa7b4ead</hash>
+         <hash>c8659678343871e1b8a9cfbe55d7ca878c5888b99a9d0a0166743c28d1004cd2</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\utils\assembler.h</file>
@@ -4861,7 +4861,7 @@
       </entry>
       <entry>
          <file>mcc_generated_files\mcc.c</file>
-         <hash>c65a6a64c71df43fa78d3505c63027c52ec540b42dd0571bd8b3666d3103edd1</hash>
+         <hash>c9ab7f99cf09550d2886a3daeb1e775cd59d2d9ebdbf8ba3ea8a268401e2a2e1</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\utils\assembler\iar.h</file>

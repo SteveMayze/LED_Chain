@@ -50,16 +50,16 @@ void clk_change(uint16_t period, uint16_t duty, uint8_t div)
 }
 
 void run_anim(){
-        // All ON
+        // All ON (toggle))
         FF_RESET_SetLow();
         FF_SET_SetLow();
         FF_J_SetHigh();
         FF_K_SetHigh();
         
-        _delay_ms(10000);
+        _delay_ms(15000);
 
         // Side to side blink
-        for( uint8_t i = 0; i<10; i++ ) {
+        for( uint8_t i = 0; i<20; i++ ) {
             FF_J_SetLow();
             FF_K_SetHigh();
 
@@ -76,19 +76,19 @@ void run_anim(){
         FF_SET_SetHigh();
         FF_J_SetHigh();
         FF_K_SetHigh();
-        _delay_ms(5000);
+        _delay_ms(2500);
 
         // All blink in unison
-        for( uint8_t i = 0; i<10; i++ ) {
+        for( uint8_t i = 0; i<20; i++ ) {
 
             FF_RESET_SetHigh();
             FF_SET_SetHigh();
 
-            _delay_ms(500);
+            _delay_ms(1000);
 
             FF_RESET_SetLow();
             FF_SET_SetLow();
-            _delay_ms(500);
+            _delay_ms(1000);
         }
         // All OFF
         FF_RESET_SetHigh();
@@ -120,15 +120,18 @@ int main(void)
     USER_LED0_SetHigh();
     while (1){
         
+        // 100 Hz
         blink_led(1);
         run_anim();       
 
+        // 5 Hz
         blink_led(2);
         uint16_t period = calculate_period(5, 5);
         uint16_t duty = period/2;
         clk_change(period, duty, 5);
         run_anim();        
 
+        // 10 Hz
         blink_led(3);
         period = calculate_period(10, 5);
         duty = period/2;
@@ -136,7 +139,32 @@ int main(void)
 
         run_anim();        
 
+        // Toggle 100Hz
+        // This was an attempt to alter the duty cycle to see what effect
+        // this has. It is a rather disturbing flicker.
+//        period = calculate_period(100, 5);
+//        duty = period/2;
+//        clk_change(period, duty, 5);
+//        
+//        FF_RESET_SetLow();
+//        FF_SET_SetLow();
+//        FF_J_SetHigh();
+//        FF_K_SetHigh();
+//        
+//        for (int16_t i=0; i < period; i+=10 ){
+//            clk_change(period, i, 5);
+//            _delay_ms(500);
+//        }
+//
+//        for (int16_t i=period; i > 0; i-=10 ){
+//            clk_change(period, i, 5);
+//            _delay_ms(500);
+//        }
+
+        
         TCA0_Initialize();
+        
+        
     }
 }
 /**
