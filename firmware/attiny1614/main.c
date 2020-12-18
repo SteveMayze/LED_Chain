@@ -25,6 +25,23 @@
 #include "util/delay.h"
 
 
+/**
+ * Internal delay that can take a parameter. AVR does not allow variables
+ * as it sets up the timer at compile time.
+ * @param n
+ */
+void delay_s(int n) {
+    while(n--) {
+        _delay_ms(1000);
+    }
+}
+
+void delay_ms(int n) {
+    while(n--) {
+        _delay_ms(1);
+    }
+}
+
 uint16_t calculate_period(uint16_t frequency, uint8_t new_div) {
     //    uint8_t div_reg = (TCA0.SINGLE.CTRLA & 0x0F) >> 1;
 
@@ -49,6 +66,158 @@ void clk_change(uint16_t period, uint16_t duty, uint8_t div)
 
 }
 
+#define _GINGERBREAD_HOUSE
+
+#ifdef _GINGERBREAD_HOUSE
+
+
+void set_pluse_rate(int frequency, uint8_t duty_div, uint8_t clk_div) {
+    // All ON
+    // 100 Hz
+    uint16_t period = calculate_period(frequency, clk_div);
+    uint16_t duty = period/duty_div;
+    clk_change(period, duty, clk_div);
+    FF_RESET_SetLow();
+    FF_SET_SetLow();
+    FF_J_SetHigh();
+    FF_K_SetHigh();    
+}
+
+void side_to_side_blink(int iterations, int duty) {
+    // Side to side blink
+    for( uint8_t i = 0; i<iterations; i++ ) {
+        FF_J_SetLow();
+        FF_K_SetHigh();
+
+        delay_ms(duty);
+
+        FF_J_SetHigh();
+        FF_K_SetLow();
+
+        delay_ms(duty);
+    }
+}
+
+void unison_blink(int iterations, int duty){       
+    // All blink in unison
+    for( uint8_t i = 0; i<iterations; i++ ) {
+        FF_RESET_SetHigh();
+        FF_SET_SetHigh();
+
+        _delay_ms(1000);
+
+        FF_RESET_SetLow();
+        FF_SET_SetLow();
+        _delay_ms(1000);
+    }
+
+}
+void all_off() {
+    // All OFF
+    FF_RESET_SetHigh();
+    FF_SET_SetHigh();
+}
+
+
+void blink_led(uint8_t times) {
+    USER_LED0_SetHigh();
+    for( uint8_t cnt = 0; cnt < times; cnt++){
+        USER_LED0_SetLow();
+        _delay_ms(100);
+        USER_LED0_SetHigh();    
+        _delay_ms(250);
+    }    
+    USER_LED0_SetHigh();
+}
+/*
+    Main application
+*/
+#define EFFECT_LIST 5
+#define MAX_TIME 25
+#define MIN_TIME 10
+
+volatile uint8_t effect_idx = 0;
+volatile bool tick = false;
+volatile uint8_t duration = MAX_TIME;
+volatile bool blink_flag = false;
+
+
+uint8_t next_random(uint8_t max, uint8_t last_value){
+    uint8_t result = last_value;
+    while( result == last_value){
+        result = rand() % max;
+    }
+    return result;
+}
+
+
+void rtc_isr_hanlder(void) {
+    tick = true;
+}
+
+void tock(void) {
+    tick = false;
+    USER_LED0_Toggle();
+    duration--;
+    if ( duration == 0 ) {
+        effect_idx = next_random(EFFECT_LIST, effect_idx);
+        duration = next_random(MAX_TIME, duration);
+        duration = duration + MIN_TIME;
+        blink_flag = false;
+        switch(effect_idx) {
+            case 0 :
+                set_pluse_rate(1, 2, 5);
+                break;
+            case 1:
+                set_pluse_rate(5, 2, 5);
+                break;
+            case 2:
+                set_pluse_rate(10, 2, 5);
+                break;
+            case 3:
+                set_pluse_rate(100, 2, 5);
+                break;
+            case 4:
+                set_pluse_rate(100, 2, 5);
+                blink_flag = true;
+                break;
+            default:
+                // blink_led(3);
+                all_off();
+                break;
+        }            
+    }
+    if( blink_flag ){
+        set_pluse_rate(100, 2, 5);
+        if(( duration % 2) == 0) {
+            set_pluse_rate(100, 2, 5);
+        } else {
+            all_off();
+        }
+    }
+}
+
+int main(void)
+{
+    /* Initializes MCU, drivers and middleware */
+    SYSTEM_Initialize();
+    
+    RTC_SetOVFIsrCallback(&rtc_isr_hanlder);
+    // RTC_SetPITIsrCallback(&rtc_isr_hanlder);
+
+    /* Replace with your application code */
+    USER_LED0_SetHigh();
+    // set_pluse_rate(10, 2, 5);
+    while (1){
+        if ( tick  ) {
+            tock();
+        }
+    }        
+}
+#endif
+
+
+#ifdef _TEST_ANIM
 void run_anim(){
         // All ON (toggle))
         FF_RESET_SetLow();
@@ -163,10 +332,10 @@ int main(void)
 
         
         TCA0_Initialize();
-        
-        
     }
 }
+#endif
+    
 /**
     End of File
 */
