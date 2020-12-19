@@ -133,7 +133,7 @@ void blink_led(uint8_t times) {
     Main application
 */
 #define EFFECT_LIST 5
-#define MAX_TIME 25
+#define MAX_TIME 20
 #define MIN_TIME 10
 
 volatile uint8_t effect_idx = 0;
@@ -157,7 +157,6 @@ void rtc_isr_hanlder(void) {
 
 void tock(void) {
     tick = false;
-    USER_LED0_Toggle();
     duration--;
     if ( duration == 0 ) {
         effect_idx = next_random(EFFECT_LIST, effect_idx);
@@ -182,7 +181,6 @@ void tock(void) {
                 blink_flag = true;
                 break;
             default:
-                // blink_led(3);
                 all_off();
                 break;
         }            
@@ -203,11 +201,8 @@ int main(void)
     SYSTEM_Initialize();
     
     RTC_SetOVFIsrCallback(&rtc_isr_hanlder);
-    // RTC_SetPITIsrCallback(&rtc_isr_hanlder);
-
-    /* Replace with your application code */
-    USER_LED0_SetHigh();
-    // set_pluse_rate(10, 2, 5);
+    set_pluse_rate(5, 2, 5);
+    tick = true;
     while (1){
         if ( tick  ) {
             tock();
