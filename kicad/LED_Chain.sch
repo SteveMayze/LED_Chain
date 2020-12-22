@@ -670,36 +670,38 @@ Vbb
 $Comp
 L Connector:Conn_01x04_Male J5
 U 1 1 5FA85238
-P 7750 5200
-F 0 "J5" H 7722 5174 50  0000 R CNN
-F 1 "NeoPixel R1 C" H 7722 5083 50  0000 R CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 7750 5200 50  0001 C CNN
-F 3 "~" H 7750 5200 50  0001 C CNN
-	1    7750 5200
+P 7750 5050
+F 0 "J5" H 7722 5024 50  0000 R CNN
+F 1 "NeoPixel R1 C" H 7722 4933 50  0000 R CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 7750 5050 50  0001 C CNN
+F 3 "~" H 7750 5050 50  0001 C CNN
+	1    7750 5050
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_01x04_Male J4
 U 1 1 5FA870C1
-P 7750 4750
-F 0 "J4" H 7722 4724 50  0000 R CNN
-F 1 "NeoPixel R1 B" H 7722 4633 50  0000 R CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 7750 4750 50  0001 C CNN
-F 3 "~" H 7750 4750 50  0001 C CNN
-	1    7750 4750
+P 7750 4650
+F 0 "J4" H 7722 4624 50  0000 R CNN
+F 1 "NeoPixel R1 B" H 7722 4533 50  0000 R CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 7750 4650 50  0001 C CNN
+F 3 "~" H 7750 4650 50  0001 C CNN
+	1    7750 4650
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_01x03_Male J3
 U 1 1 5FA916E0
-P 7750 4400
-F 0 "J3" H 7722 4424 50  0000 R CNN
-F 1 "NeoPixel R1 A" H 7722 4333 50  0000 R CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 7750 4400 50  0001 C CNN
-F 3 "~" H 7750 4400 50  0001 C CNN
-	1    7750 4400
+P 7750 4350
+F 0 "J3" H 7722 4374 50  0000 R CNN
+F 1 "NeoPixel R1 A" H 7722 4283 50  0000 R CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 7750 4350 50  0001 C CNN
+F 3 "~" H 7750 4350 50  0001 C CNN
+	1    7750 4350
 	-1   0    0    -1  
 $EndComp
+Wire Wire Line
+	7550 4550 6850 4550
 Wire Wire Line
 	7550 4650 6850 4650
 Wire Wire Line
@@ -709,38 +711,36 @@ Wire Wire Line
 Wire Wire Line
 	7550 4950 6850 4950
 Wire Wire Line
-	7550 5100 6850 5100
+	7550 5050 6850 5050
 Wire Wire Line
-	7550 5200 6850 5200
+	7550 5250 6850 5250
 Wire Wire Line
-	7550 5400 6850 5400
+	7550 4250 6850 4250
 Wire Wire Line
-	7550 4300 6850 4300
+	7550 4350 6850 4350
 Wire Wire Line
-	7550 4400 6850 4400
-Wire Wire Line
-	7550 4500 6850 4500
-Text Label 7350 4650 0    50   ~ 0
+	7550 4450 6850 4450
+Text Label 7350 4550 0    50   ~ 0
 A4
-Text Label 7350 4750 0    50   ~ 0
+Text Label 7350 4650 0    50   ~ 0
 A5
-Text Label 7350 4850 0    50   ~ 0
+Text Label 7350 4750 0    50   ~ 0
 A6
-Text Label 7350 4950 0    50   ~ 0
+Text Label 7350 4850 0    50   ~ 0
 A7
-Text Label 7350 5400 0    50   ~ 0
+Text Label 7350 5250 0    50   ~ 0
 B3
-Text Label 7350 5300 0    50   ~ 0
+Text Label 7350 5150 0    50   ~ 0
 B2
-Text Label 7350 5200 0    50   ~ 0
+Text Label 7350 5050 0    50   ~ 0
 B1
-Text Label 7350 5100 0    50   ~ 0
+Text Label 7350 4950 0    50   ~ 0
 B0
-Text Label 7350 4500 0    50   ~ 0
+Text Label 7350 4250 0    50   ~ 0
 A3
-Text Label 7350 4400 0    50   ~ 0
+Text Label 7350 4350 0    50   ~ 0
 A2
-Text Label 7350 4300 0    50   ~ 0
+Text Label 7350 4450 0    50   ~ 0
 A1
 Wire Wire Line
 	3450 5550 3200 5550
@@ -749,22 +749,22 @@ Vdd
 Wire Wire Line
 	3450 5650 3200 5650
 Wire Wire Line
-	7550 5550 6850 5550
+	7550 5350 6850 5350
 Wire Wire Line
-	7550 5650 6850 5650
-Text Label 7350 5550 0    50   ~ 0
+	7550 5450 6850 5450
+Text Label 7350 5350 0    50   ~ 0
 5V
-Text Label 6850 5650 0    50   ~ 0
+Text Label 6850 5450 0    50   ~ 0
 GND
 $Comp
 L Connector:Conn_01x02_Male J6
 U 1 1 5FAE3734
-P 7750 5550
-F 0 "J6" H 7722 5524 50  0000 R CNN
-F 1 "NeoPixel R1 D" H 7722 5433 50  0000 R CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 7750 5550 50  0001 C CNN
-F 3 "~" H 7750 5550 50  0001 C CNN
-	1    7750 5550
+P 7750 5350
+F 0 "J6" H 7722 5324 50  0000 R CNN
+F 1 "NeoPixel R1 D" H 7722 5233 50  0000 R CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 7750 5350 50  0001 C CNN
+F 3 "~" H 7750 5350 50  0001 C CNN
+	1    7750 5350
 	-1   0    0    -1  
 $EndComp
 Text Label 3200 5550 0    50   ~ 0
@@ -780,30 +780,30 @@ F 3 "~" H 3650 5550 50  0001 C CNN
 	1    3650 5550
 	-1   0    0    -1  
 $EndComp
-Text Notes 6950 4200 0    50   ~ 0
+Text Notes 6950 4150 0    50   ~ 0
 Interface to the NeoPixel R 2L_1
 Text Notes 2900 5850 0    50   ~ 0
 Jumper for common Vbb and Vdd
 Wire Wire Line
-	7550 5300 6850 5300
-Text Label 6850 5100 0    50   ~ 0
+	7550 5150 6850 5150
+Text Label 6850 4950 0    50   ~ 0
 CLK
-Text Label 6850 4400 0    50   ~ 0
+Text Label 6850 4350 0    50   ~ 0
 FF_J
-Text Label 6850 4500 0    50   ~ 0
+Text Label 6850 4250 0    50   ~ 0
 FF_K
-Text Label 6850 4300 0    50   ~ 0
+Text Label 6850 4450 0    50   ~ 0
 FF_SET
-Text Label 6850 4650 0    50   ~ 0
+Text Label 6850 4550 0    50   ~ 0
 FF_RESET
-Text Label 6850 5550 0    50   ~ 0
+Text Label 6850 5350 0    50   ~ 0
 Vdd
+NoConn ~ 6850 4650
 NoConn ~ 6850 4750
 NoConn ~ 6850 4850
-NoConn ~ 6850 4950
-NoConn ~ 6850 5400
-NoConn ~ 6850 5200
-NoConn ~ 6850 5300
+NoConn ~ 6850 5250
+NoConn ~ 6850 5050
+NoConn ~ 6850 5150
 Wire Wire Line
 	2750 4450 3000 4450
 Wire Wire Line
