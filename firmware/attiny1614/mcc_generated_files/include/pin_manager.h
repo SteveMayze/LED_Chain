@@ -54,23 +54,23 @@
 #define FF_J_DisableDigitalInputBuffer() do { PORTA.PIN2CTRL = (PORTA.PIN2CTRL & ~PORT_ISC_gm) | 0x4 ; } while(0)
 #define FF_J_EnableInterruptForLowLevelSensing() do { PORTA.PIN2CTRL = (PORTA.PIN2CTRL & ~PORT_ISC_gm) | 0x5 ; } while(0)
 
-//get/set FF_SET aliases
-#define FF_SET_SetHigh() do { PORTA_OUTSET = 0x2; } while(0)
-#define FF_SET_SetLow() do { PORTA_OUTCLR = 0x2; } while(0)
-#define FF_SET_Toggle() do { PORTA_OUTTGL = 0x2; } while(0)
-#define FF_SET_GetValue() (VPORTA.IN & (0x1 << 1))
-#define FF_SET_SetDigitalInput() do { PORTA_DIRCLR = 0x2; } while(0)
-#define FF_SET_SetDigitalOutput() do { PORTA_DIRSET = 0x2; } while(0)
-#define FF_SET_SetPullUp() do { PORTA_PIN1CTRL  |= PORT_PULLUPEN_bm; } while(0)
-#define FF_SET_ResetPullUp() do { PORTA_PIN1CTRL  &= ~PORT_PULLUPEN_bm; } while(0)
-#define FF_SET_SetInverted() do { PORTA_PIN1CTRL  |= PORT_INVEN_bm; } while(0)
-#define FF_SET_ResetInverted() do { PORTA_PIN1CTRL  &= ~PORT_INVEN_bm; } while(0)
-#define FF_SET_DisableInterruptOnChange() do { PORTA.PIN1CTRL = (PORTA.PIN1CTRL & ~PORT_ISC_gm) | 0x0 ; } while(0)
-#define FF_SET_EnableInterruptForBothEdges() do { PORTA.PIN1CTRL = (PORTA.PIN1CTRL & ~PORT_ISC_gm) | 0x1 ; } while(0)
-#define FF_SET_EnableInterruptForRisingEdge() do { PORTA.PIN1CTRL = (PORTA.PIN1CTRL & ~PORT_ISC_gm) | 0x2 ; } while(0)
-#define FF_SET_EnableInterruptForFallingEdge() do { PORTA.PIN1CTRL = (PORTA.PIN1CTRL & ~PORT_ISC_gm) | 0x3 ; } while(0)
-#define FF_SET_DisableDigitalInputBuffer() do { PORTA.PIN1CTRL = (PORTA.PIN1CTRL & ~PORT_ISC_gm) | 0x4 ; } while(0)
-#define FF_SET_EnableInterruptForLowLevelSensing() do { PORTA.PIN1CTRL = (PORTA.PIN1CTRL & ~PORT_ISC_gm) | 0x5 ; } while(0)
+//get/set FF_K aliases
+#define FF_K_SetHigh() do { PORTA_OUTSET = 0x2; } while(0)
+#define FF_K_SetLow() do { PORTA_OUTCLR = 0x2; } while(0)
+#define FF_K_Toggle() do { PORTA_OUTTGL = 0x2; } while(0)
+#define FF_K_GetValue() (VPORTA.IN & (0x1 << 1))
+#define FF_K_SetDigitalInput() do { PORTA_DIRCLR = 0x2; } while(0)
+#define FF_K_SetDigitalOutput() do { PORTA_DIRSET = 0x2; } while(0)
+#define FF_K_SetPullUp() do { PORTA_PIN1CTRL  |= PORT_PULLUPEN_bm; } while(0)
+#define FF_K_ResetPullUp() do { PORTA_PIN1CTRL  &= ~PORT_PULLUPEN_bm; } while(0)
+#define FF_K_SetInverted() do { PORTA_PIN1CTRL  |= PORT_INVEN_bm; } while(0)
+#define FF_K_ResetInverted() do { PORTA_PIN1CTRL  &= ~PORT_INVEN_bm; } while(0)
+#define FF_K_DisableInterruptOnChange() do { PORTA.PIN1CTRL = (PORTA.PIN1CTRL & ~PORT_ISC_gm) | 0x0 ; } while(0)
+#define FF_K_EnableInterruptForBothEdges() do { PORTA.PIN1CTRL = (PORTA.PIN1CTRL & ~PORT_ISC_gm) | 0x1 ; } while(0)
+#define FF_K_EnableInterruptForRisingEdge() do { PORTA.PIN1CTRL = (PORTA.PIN1CTRL & ~PORT_ISC_gm) | 0x2 ; } while(0)
+#define FF_K_EnableInterruptForFallingEdge() do { PORTA.PIN1CTRL = (PORTA.PIN1CTRL & ~PORT_ISC_gm) | 0x3 ; } while(0)
+#define FF_K_DisableDigitalInputBuffer() do { PORTA.PIN1CTRL = (PORTA.PIN1CTRL & ~PORT_ISC_gm) | 0x4 ; } while(0)
+#define FF_K_EnableInterruptForLowLevelSensing() do { PORTA.PIN1CTRL = (PORTA.PIN1CTRL & ~PORT_ISC_gm) | 0x5 ; } while(0)
 
 //get/set FF_RESET aliases
 #define FF_RESET_SetHigh() do { PORTA_OUTSET = 0x10; } while(0)
@@ -90,23 +90,23 @@
 #define FF_RESET_DisableDigitalInputBuffer() do { PORTA.PIN4CTRL = (PORTA.PIN4CTRL & ~PORT_ISC_gm) | 0x4 ; } while(0)
 #define FF_RESET_EnableInterruptForLowLevelSensing() do { PORTA.PIN4CTRL = (PORTA.PIN4CTRL & ~PORT_ISC_gm) | 0x5 ; } while(0)
 
-//get/set FF_K aliases
-#define FF_K_SetHigh() do { PORTA_OUTSET = 0x8; } while(0)
-#define FF_K_SetLow() do { PORTA_OUTCLR = 0x8; } while(0)
-#define FF_K_Toggle() do { PORTA_OUTTGL = 0x8; } while(0)
-#define FF_K_GetValue() (VPORTA.IN & (0x1 << 3))
-#define FF_K_SetDigitalInput() do { PORTA_DIRCLR = 0x8; } while(0)
-#define FF_K_SetDigitalOutput() do { PORTA_DIRSET = 0x8; } while(0)
-#define FF_K_SetPullUp() do { PORTA_PIN3CTRL  |= PORT_PULLUPEN_bm; } while(0)
-#define FF_K_ResetPullUp() do { PORTA_PIN3CTRL  &= ~PORT_PULLUPEN_bm; } while(0)
-#define FF_K_SetInverted() do { PORTA_PIN3CTRL  |= PORT_INVEN_bm; } while(0)
-#define FF_K_ResetInverted() do { PORTA_PIN3CTRL  &= ~PORT_INVEN_bm; } while(0)
-#define FF_K_DisableInterruptOnChange() do { PORTA.PIN3CTRL = (PORTA.PIN3CTRL & ~PORT_ISC_gm) | 0x0 ; } while(0)
-#define FF_K_EnableInterruptForBothEdges() do { PORTA.PIN3CTRL = (PORTA.PIN3CTRL & ~PORT_ISC_gm) | 0x1 ; } while(0)
-#define FF_K_EnableInterruptForRisingEdge() do { PORTA.PIN3CTRL = (PORTA.PIN3CTRL & ~PORT_ISC_gm) | 0x2 ; } while(0)
-#define FF_K_EnableInterruptForFallingEdge() do { PORTA.PIN3CTRL = (PORTA.PIN3CTRL & ~PORT_ISC_gm) | 0x3 ; } while(0)
-#define FF_K_DisableDigitalInputBuffer() do { PORTA.PIN3CTRL = (PORTA.PIN3CTRL & ~PORT_ISC_gm) | 0x4 ; } while(0)
-#define FF_K_EnableInterruptForLowLevelSensing() do { PORTA.PIN3CTRL = (PORTA.PIN3CTRL & ~PORT_ISC_gm) | 0x5 ; } while(0)
+//get/set FF_SET aliases
+#define FF_SET_SetHigh() do { PORTA_OUTSET = 0x8; } while(0)
+#define FF_SET_SetLow() do { PORTA_OUTCLR = 0x8; } while(0)
+#define FF_SET_Toggle() do { PORTA_OUTTGL = 0x8; } while(0)
+#define FF_SET_GetValue() (VPORTA.IN & (0x1 << 3))
+#define FF_SET_SetDigitalInput() do { PORTA_DIRCLR = 0x8; } while(0)
+#define FF_SET_SetDigitalOutput() do { PORTA_DIRSET = 0x8; } while(0)
+#define FF_SET_SetPullUp() do { PORTA_PIN3CTRL  |= PORT_PULLUPEN_bm; } while(0)
+#define FF_SET_ResetPullUp() do { PORTA_PIN3CTRL  &= ~PORT_PULLUPEN_bm; } while(0)
+#define FF_SET_SetInverted() do { PORTA_PIN3CTRL  |= PORT_INVEN_bm; } while(0)
+#define FF_SET_ResetInverted() do { PORTA_PIN3CTRL  &= ~PORT_INVEN_bm; } while(0)
+#define FF_SET_DisableInterruptOnChange() do { PORTA.PIN3CTRL = (PORTA.PIN3CTRL & ~PORT_ISC_gm) | 0x0 ; } while(0)
+#define FF_SET_EnableInterruptForBothEdges() do { PORTA.PIN3CTRL = (PORTA.PIN3CTRL & ~PORT_ISC_gm) | 0x1 ; } while(0)
+#define FF_SET_EnableInterruptForRisingEdge() do { PORTA.PIN3CTRL = (PORTA.PIN3CTRL & ~PORT_ISC_gm) | 0x2 ; } while(0)
+#define FF_SET_EnableInterruptForFallingEdge() do { PORTA.PIN3CTRL = (PORTA.PIN3CTRL & ~PORT_ISC_gm) | 0x3 ; } while(0)
+#define FF_SET_DisableDigitalInputBuffer() do { PORTA.PIN3CTRL = (PORTA.PIN3CTRL & ~PORT_ISC_gm) | 0x4 ; } while(0)
+#define FF_SET_EnableInterruptForLowLevelSensing() do { PORTA.PIN3CTRL = (PORTA.PIN3CTRL & ~PORT_ISC_gm) | 0x5 ; } while(0)
 
 //get/set USER_LED0 aliases
 #define USER_LED0_SetHigh() do { PORTA_OUTSET = 0x20; } while(0)
@@ -147,12 +147,12 @@
 void PIN_MANAGER_Initialize();
 void PORTA_FF_J_DefaultInterruptHandler(void);
 void PORTA_FF_J_SetInterruptHandler(void (* interruptHandler)(void)) ;
-void PORTA_FF_SET_DefaultInterruptHandler(void);
-void PORTA_FF_SET_SetInterruptHandler(void (* interruptHandler)(void)) ;
-void PORTA_FF_RESET_DefaultInterruptHandler(void);
-void PORTA_FF_RESET_SetInterruptHandler(void (* interruptHandler)(void)) ;
 void PORTA_FF_K_DefaultInterruptHandler(void);
 void PORTA_FF_K_SetInterruptHandler(void (* interruptHandler)(void)) ;
+void PORTA_FF_RESET_DefaultInterruptHandler(void);
+void PORTA_FF_RESET_SetInterruptHandler(void (* interruptHandler)(void)) ;
+void PORTA_FF_SET_DefaultInterruptHandler(void);
+void PORTA_FF_SET_SetInterruptHandler(void (* interruptHandler)(void)) ;
 void PORTA_USER_LED0_DefaultInterruptHandler(void);
 void PORTA_USER_LED0_SetInterruptHandler(void (* interruptHandler)(void)) ;
 void PORTB_PB0_DefaultInterruptHandler(void);

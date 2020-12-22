@@ -33,9 +33,9 @@
 
 #include "../include/pin_manager.h"
 static void (*PORTA_FF_J_InterruptHandler)(void);
-static void (*PORTA_FF_SET_InterruptHandler)(void);
-static void (*PORTA_FF_RESET_InterruptHandler)(void);
 static void (*PORTA_FF_K_InterruptHandler)(void);
+static void (*PORTA_FF_RESET_InterruptHandler)(void);
+static void (*PORTA_FF_SET_InterruptHandler)(void);
 static void (*PORTA_USER_LED0_InterruptHandler)(void);
 static void (*PORTB_PB0_InterruptHandler)(void);
 
@@ -79,9 +79,9 @@ void PIN_MANAGER_Initialize()
 
     // register default ISC callback functions at runtime; use these methods to register a custom function
     PORTA_FF_J_SetInterruptHandler(PORTA_FF_J_DefaultInterruptHandler);
-    PORTA_FF_SET_SetInterruptHandler(PORTA_FF_SET_DefaultInterruptHandler);
-    PORTA_FF_RESET_SetInterruptHandler(PORTA_FF_RESET_DefaultInterruptHandler);
     PORTA_FF_K_SetInterruptHandler(PORTA_FF_K_DefaultInterruptHandler);
+    PORTA_FF_RESET_SetInterruptHandler(PORTA_FF_RESET_DefaultInterruptHandler);
+    PORTA_FF_SET_SetInterruptHandler(PORTA_FF_SET_DefaultInterruptHandler);
     PORTA_USER_LED0_SetInterruptHandler(PORTA_USER_LED0_DefaultInterruptHandler);
     PORTB_PB0_SetInterruptHandler(PORTB_PB0_DefaultInterruptHandler);
 }
@@ -117,17 +117,17 @@ void PORTA_FF_J_DefaultInterruptHandler(void)
     // or set custom function using PORTA_FF_J_SetInterruptHandler()
 }
 /**
-  Allows selecting an interrupt handler for PORTA_FF_SET at application runtime
+  Allows selecting an interrupt handler for PORTA_FF_K at application runtime
 */
-void PORTA_FF_SET_SetInterruptHandler(void (* interruptHandler)(void)) 
+void PORTA_FF_K_SetInterruptHandler(void (* interruptHandler)(void)) 
 {
-    PORTA_FF_SET_InterruptHandler = interruptHandler;
+    PORTA_FF_K_InterruptHandler = interruptHandler;
 }
 
-void PORTA_FF_SET_DefaultInterruptHandler(void)
+void PORTA_FF_K_DefaultInterruptHandler(void)
 {
-    // add your PORTA_FF_SET interrupt custom code
-    // or set custom function using PORTA_FF_SET_SetInterruptHandler()
+    // add your PORTA_FF_K interrupt custom code
+    // or set custom function using PORTA_FF_K_SetInterruptHandler()
 }
 /**
   Allows selecting an interrupt handler for PORTA_FF_RESET at application runtime
@@ -143,17 +143,17 @@ void PORTA_FF_RESET_DefaultInterruptHandler(void)
     // or set custom function using PORTA_FF_RESET_SetInterruptHandler()
 }
 /**
-  Allows selecting an interrupt handler for PORTA_FF_K at application runtime
+  Allows selecting an interrupt handler for PORTA_FF_SET at application runtime
 */
-void PORTA_FF_K_SetInterruptHandler(void (* interruptHandler)(void)) 
+void PORTA_FF_SET_SetInterruptHandler(void (* interruptHandler)(void)) 
 {
-    PORTA_FF_K_InterruptHandler = interruptHandler;
+    PORTA_FF_SET_InterruptHandler = interruptHandler;
 }
 
-void PORTA_FF_K_DefaultInterruptHandler(void)
+void PORTA_FF_SET_DefaultInterruptHandler(void)
 {
-    // add your PORTA_FF_K interrupt custom code
-    // or set custom function using PORTA_FF_K_SetInterruptHandler()
+    // add your PORTA_FF_SET interrupt custom code
+    // or set custom function using PORTA_FF_SET_SetInterruptHandler()
 }
 /**
   Allows selecting an interrupt handler for PORTA_USER_LED0 at application runtime

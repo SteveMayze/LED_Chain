@@ -13,20 +13,20 @@
          <string>class com.microchip.mcc.mcu8.interruptManager.cpuint.CPUINT</string>
       </entry>
       <entry>
-         <string>BOD</string>
-         <string>class com.microchip.mcc.mcu8.systemManager.tiny_mega_init.bod.BOD</string>
-      </entry>
-      <entry>
          <string>WDT</string>
          <string>class com.microchip.mcc.mcu8.systemManager.tiny_mega_init.wdt.WDT</string>
       </entry>
       <entry>
-         <string>Pin Module</string>
-         <string>class com.microchip.mcc.mcu8.pinManager.PinManager</string>
+         <string>BOD</string>
+         <string>class com.microchip.mcc.mcu8.systemManager.tiny_mega_init.bod.BOD</string>
       </entry>
       <entry>
          <string>TCA0</string>
          <string>class com.microchip.mcc.mcu8.modules.tca.tiny_mega_init.TCA</string>
+      </entry>
+      <entry>
+         <string>Pin Module</string>
+         <string>class com.microchip.mcc.mcu8.pinManager.PinManager</string>
       </entry>
       <entry>
          <string>SLPCTRL</string>
@@ -37,12 +37,12 @@
          <string>class com.microchip.mcc.mcu8.systemManager.tiny_mega_init.rstctrl.RSTCTRL</string>
       </entry>
       <entry>
-         <string>Interrupt Manager</string>
-         <string>class com.microchip.mcc.mcu8.interruptManager.InterruptManager</string>
-      </entry>
-      <entry>
          <string>CLKCTRL</string>
          <string>class com.microchip.mcc.mcu8.systemManager.tiny_mega_init.clkctrl.CLKCTRL</string>
+      </entry>
+      <entry>
+         <string>Interrupt Manager</string>
+         <string>class com.microchip.mcc.mcu8.interruptManager.InterruptManager</string>
       </entry>
    </usedClasses>
    <usedLibraries class="java.util.ArrayList">
@@ -310,12 +310,12 @@
          <value>1</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="RTC" registerAlias="CTRLA" settingAlias="PRESCALER" alias="DIV1"/>
-         <value>0</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="TCA0" name="TCA0_CMP2IISRFunction"/>
          <value>ISR_TCA0_CMP2I</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="RTC" registerAlias="CTRLA" settingAlias="PRESCALER" alias="DIV1"/>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="SLPCTRL" registerAlias="CTRLA"/>
@@ -342,12 +342,12 @@
          <value>3</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="RTC" registerAlias="CTRLA" settingAlias="PRESCALER" alias="DIV4"/>
-         <value>2</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="TCA0" name="channel2InterruptEnable_split_freqGen"/>
          <value>false</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="RTC" registerAlias="CTRLA" settingAlias="PRESCALER" alias="DIV4"/>
+         <value>2</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="RSTCTRL" registerAlias="RSTFR" settingAlias="SWRF" alias="disabled"/>
@@ -502,12 +502,12 @@
          <value>disabled</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="RTC" name="CLK_PER"/>
-         <value>3333333</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="TCA0" name="Timeout"/>
          <value>600 ns</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="RTC" name="CLK_PER"/>
+         <value>3333333</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="RTC" registerAlias="PITCTRLA" settingAlias="PERIOD"/>
@@ -610,12 +610,12 @@
          <value>4</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="RTC" registerAlias="CLKSEL"/>
-         <value>0</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="TCA0" registerAlias="TCA_SINGLE_CTRLC" settingAlias="CMP1OV" alias="enabled"/>
          <value>1</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="RTC" registerAlias="CLKSEL"/>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="RTC" registerAlias="PITCTRLA" settingAlias="PERIOD" alias="CYC4096"/>
@@ -702,11 +702,11 @@
          <value>1</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="RTC" registerAlias="PITCTRLA" settingAlias="PITEN" alias="disabled"/>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="TCA0" registerAlias="TCA_SPLIT_INTCTRL" settingAlias="LCMP0" alias="disabled"/>
          <value>0</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="TCA0" registerAlias="TCA_SPLIT_INTCTRL" settingAlias="LCMP0" alias="disabled"/>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="RTC" registerAlias="PITCTRLA" settingAlias="PITEN" alias="disabled"/>
          <value>0</value>
       </entry>
       <entry>
@@ -1054,11 +1054,11 @@
          <value>0</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="RTC" registerAlias="DBGCTRL" settingAlias="DBGRUN" alias="disabled"/>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="TCA0" registerAlias="TCA_SINGLE_CTRLESET" settingAlias="DIR" alias="UP"/>
          <value>0</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="TCA0" registerAlias="TCA_SINGLE_CTRLESET" settingAlias="DIR" alias="UP"/>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="RTC" registerAlias="DBGCTRL" settingAlias="DBGRUN" alias="disabled"/>
          <value>0</value>
       </entry>
       <entry>
@@ -1142,12 +1142,12 @@
          <value>5</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="CPUINT" registerAlias="SREG" settingAlias="I" alias="enabled"/>
-         <value>1</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="CLKCTRL" registerAlias="MCLKCTRLB" settingAlias="PDIV" alias="16X"/>
          <value>3</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="CPUINT" registerAlias="SREG" settingAlias="I" alias="enabled"/>
+         <value>1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="CLKCTRL" registerAlias="MCLKLOCK"/>
@@ -1386,12 +1386,12 @@
          <value>false</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="RTC" name="isOVFINTEnable"/>
-         <value>true</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="TCA0" name="CLK_PER"/>
          <value>3333333</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="RTC" name="isOVFINTEnable"/>
+         <value>true</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="OUT_PA0"/>
@@ -1742,12 +1742,12 @@
          <value>0</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="RTC" registerAlias="DBGCTRL" settingAlias="DBGRUN"/>
-         <value>disabled</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="TCA0" registerAlias="TCA_SINGLE_CTRLESET" settingAlias="DIR"/>
          <value>UP</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="RTC" registerAlias="DBGCTRL" settingAlias="DBGRUN"/>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="PORTB.PIN7CTRL" settingAlias="INVEN" alias="disabled"/>
@@ -1854,12 +1854,12 @@
          <value>INT32K</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="RTC" registerAlias="PITCTRLA" settingAlias="PERIOD" alias="CYC512"/>
-         <value>8</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="TCA0" registerAlias="TCA_SPLIT_DBGCTRL"/>
          <value>0</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="RTC" registerAlias="PITCTRLA" settingAlias="PERIOD" alias="CYC512"/>
+         <value>8</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="Pin Module" registerAlias="VPORTB.IN"/>
@@ -1982,11 +1982,11 @@
          <value>5</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="CPUINT" registerAlias="CTRLA"/>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="System Module" registerAlias="BODCFG" settingAlias="ACTIVE" alias="DIS"/>
          <value>0</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="System Module" registerAlias="BODCFG" settingAlias="ACTIVE" alias="DIS"/>
+         <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="CPUINT" registerAlias="CTRLA"/>
          <value>0</value>
       </entry>
       <entry>
@@ -2006,12 +2006,12 @@
          <value>0</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="RTC" name="period_MIN"/>
-         <value>1 ms</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="TCA0" registerAlias="TCA_SINGLE_INTCTRL"/>
          <value>0</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="RTC" name="period_MIN"/>
+         <value>1 ms</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="TCA0" name="channel0requestedTimeout_split"/>
@@ -2182,12 +2182,12 @@
          <value>0</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="RTC" registerAlias="PITCTRLA" settingAlias="PERIOD" alias="CYC8192"/>
-         <value>12</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="TCA0" registerAlias="TCA_SINGLE_CTRLD" settingAlias="SPLITM" alias="enabled"/>
          <value>1</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="RTC" registerAlias="PITCTRLA" settingAlias="PERIOD" alias="CYC8192"/>
+         <value>12</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="TCA0" name="channel2Enable_split_timeout"/>
@@ -2410,12 +2410,12 @@
          <value>0</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="RTC" registerAlias="PITCTRLA" settingAlias="PITEN"/>
-         <value>enabled</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="TCA0" name="timeout1InterruptEnable"/>
          <value>disabled</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="RTC" registerAlias="PITCTRLA" settingAlias="PITEN"/>
+         <value>enabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="PORTA.PIN1CTRL" settingAlias="ISC" alias="INPUT_DISABLE"/>
@@ -2438,15 +2438,15 @@
          <value>0</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="RTC" registerAlias="PITINTFLAGS" settingAlias="PI"/>
-         <value>disabled</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="TCA0" name="channel0requestedFreq_split"/>
          <value>208.33 kHz</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="TCA0" registerAlias="CMP2I" settingAlias="enable"/>
+         <value>disabled</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="RTC" registerAlias="PITINTFLAGS" settingAlias="PI"/>
          <value>disabled</value>
       </entry>
       <entry>
@@ -2562,12 +2562,12 @@
          <value>1</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="RTC" registerAlias="PITINTCTRL" settingAlias="PI" alias="disabled"/>
-         <value>0</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="TCA0" name="channel0actualDC_split"/>
          <value>100.00</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="RTC" registerAlias="PITINTCTRL" settingAlias="PI" alias="disabled"/>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="System Module" registerAlias="BODCFG" settingAlias="SLEEP" alias="ENABLED"/>
@@ -2698,12 +2698,12 @@
          <value>2</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="CPUINT" registerAlias="CTRLA" settingAlias="IVSEL" alias="disabled"/>
-         <value>0</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="System Module" registerAlias="SYSCFG0" settingAlias="RSTPINCFG"/>
          <value>UPDI</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="CPUINT" registerAlias="CTRLA" settingAlias="IVSEL" alias="disabled"/>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="TCA0" name="channel2actualDC_normal"/>
@@ -2895,7 +2895,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="Custom Name PA1"/>
-         <value>FF_SET</value>
+         <value>FF_K</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="Custom Name PA2"/>
@@ -2914,12 +2914,12 @@
          <value>disabled</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="RTC" registerAlias="CTRLA" settingAlias="PRESCALER" alias="DIV1024"/>
-         <value>10</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="TCA0" name="channel2requestedTimeout_normal"/>
          <value>2.4 us</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="RTC" registerAlias="CTRLA" settingAlias="PRESCALER" alias="DIV1024"/>
+         <value>10</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="CPUINT" registerAlias="STATUS" settingAlias="NMIEX"/>
@@ -3047,7 +3047,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="Custom Name PA3"/>
-         <value>FF_K</value>
+         <value>FF_SET</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="RTC" registerAlias="INTCTRL" settingAlias="OVF"/>
@@ -3522,12 +3522,12 @@
          <value>disabled</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="RTC" name="isPITEnable"/>
-         <value>true</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="TCA0" registerAlias="TCA_SINGLE_CTRLB" settingAlias="WGMODE" alias="SINGLESLOPE"/>
          <value>3</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="RTC" name="isPITEnable"/>
+         <value>true</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="PORTB.PIN3CTRL" settingAlias="ISC" alias="BOTHEDGES"/>
@@ -3842,12 +3842,12 @@
          <value>1</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="RTC" registerAlias="CLKSEL" settingAlias="CLKSEL" alias="TOSC32K"/>
-         <value>2</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="TCA0" registerAlias="TCA_SPLIT_CTRLB" settingAlias="HCMP2EN"/>
          <value>disabled</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="RTC" registerAlias="CLKSEL" settingAlias="CLKSEL" alias="TOSC32K"/>
+         <value>2</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="WDT" registerAlias="CTRLA" settingAlias="WINDOW" alias="64CLK"/>
@@ -3914,16 +3914,16 @@
          <value>enabled</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="RTC" registerAlias="INTFLAGS" settingAlias="OVF" alias="enabled"/>
-         <value>1</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="TCA0" registerAlias="TCA_SINGLE_CTRLESET" settingAlias="LUPD"/>
          <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="TCA0" registerAlias="TCA_SINGLE_CTRLA" settingAlias="CLKSEL" alias="DIV1"/>
          <value>0</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="RTC" registerAlias="INTFLAGS" settingAlias="OVF" alias="enabled"/>
+         <value>1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="PORTA.PIN4CTRL" settingAlias="ISC" alias="FALLING"/>
@@ -4058,12 +4058,12 @@
          <value>disabled</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="RTC" name="RTC_CMPIISRFunction"/>
-         <value>ISR_RTC_CMPI</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="TCA0" name="channel0requestedFreq_normal"/>
          <value>100 Hz</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="RTC" name="RTC_CMPIISRFunction"/>
+         <value>ISR_RTC_CMPI</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="DIR_PB1"/>
@@ -4282,12 +4282,12 @@
          <value>0</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="RTC" name="actualCompare"/>
-         <value>1 s</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="TCA0" registerAlias="TCA_SPLIT_CTRLD" settingAlias="SPLITM" alias="disabled"/>
          <value>0</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="RTC" name="actualCompare"/>
+         <value>1 s</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="PORTB.PIN5CTRL" settingAlias="INVEN" alias="enabled"/>
@@ -4402,12 +4402,12 @@
          <value>0</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Interrupt Manager" name="isCMPVectorEnable"/>
-         <value>false</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="System Module" registerAlias="TCD0CFG" settingAlias="CMPA" alias="enabled"/>
          <value>1</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Interrupt Manager" name="isCMPVectorEnable"/>
+         <value>false</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="CPUINT" registerAlias="CTRLA" settingAlias="LVL0RR" alias="enabled"/>
@@ -4842,16 +4842,16 @@
          <value>disabled</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="TCA0" registerAlias="OVFI" settingAlias="flag"/>
+         <value>disabled</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="RTC" name="compare_MAX"/>
          <value>32.768 s</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="RTC" registerAlias="CTRLA" settingAlias="PRESCALER" alias="DIV16"/>
          <value>4</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="TCA0" registerAlias="OVFI" settingAlias="flag"/>
-         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BOD" name="isDriverISR"/>
@@ -5182,12 +5182,12 @@
          <value>disabled</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="RTC" registerAlias="DBGCTRL"/>
-         <value>0</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="TCA0" registerAlias="TCA_SINGLE_CTRLECLR" settingAlias="LUPD" alias="enabled"/>
          <value>1</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="RTC" registerAlias="DBGCTRL"/>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="CLKCTRL" registerAlias="MCLKLOCK" settingAlias="LOCKEN"/>
@@ -5249,7 +5249,7 @@
       </entry>
       <entry>
          <file>mcc_generated_files\include\pin_manager.h</file>
-         <hash>fac215081d41b51137dc44c5e7232a5d1099e2cf8164be951d71a52aed8bff4c</hash>
+         <hash>53154dd19a2e19000d680bf50849b506a3d7e47bb146ff757cd74003eb0b0c6f</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\utils\compiler.h</file>
@@ -5261,7 +5261,7 @@
       </entry>
       <entry>
          <file>mcc_generated_files\src\pin_manager.c</file>
-         <hash>c8659678343871e1b8a9cfbe55d7ca878c5888b99a9d0a0166743c28d1004cd2</hash>
+         <hash>ea426f2065280b5bb6f14ca94bd55ab27a08d2c213444d8de0cd0e39fcd3877d</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\src\cpuint.c</file>
@@ -5289,7 +5289,7 @@
       </entry>
       <entry>
          <file>mcc_generated_files\mcc.c</file>
-         <hash>722a76a989c6b5b7c27c1821a5900bc814306b70445dd1da073ffbb0a6646973</hash>
+         <hash>c129757c774fa168172e8fb43128975162d80f13197b031a27ca088654c6c352</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\utils\assembler\iar.h</file>
