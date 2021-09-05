@@ -62,4 +62,5 @@ disassembly/
 *.atsuo
 *.code-workspace
 .vscode
+.DS_Store
 
