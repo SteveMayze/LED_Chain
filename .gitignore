@@ -60,4 +60,6 @@ disassembly/
 *.srec
 #User Specific Files
 *.atsuo
+*.code-workspace
+.vscode
 

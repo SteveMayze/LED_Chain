@@ -8,9 +8,13 @@
 #define PWM_MAXVALUE 100
 
 
-#define EFFECT_LIST 6
+#define EFFECT_LIST 7
 #define MAX_TIME 20
 #define MIN_TIME 10
+
+#define BREATHE_OFF 0
+#define BREATHE_ALL 1
+#define BREATHE_ALT 2
 
 IntervalTimer pulse_timer;
 IntervalTimer delay_timer;
@@ -26,7 +30,8 @@ volatile uint8_t effect_idx = 0;
 volatile bool pulse_tick = false;
 volatile uint8_t duration = MAX_TIME;
 volatile bool blink_flag = false;
-
+volatile uint8_t breathe_flag = 0;
+uint8_t breath_count = 0;
 volatile bool delay_tick = false;
 
 
@@ -84,6 +89,9 @@ void tock(void) {
           pulse_timer.begin(pulse_handler, 10000); // 100Hz
         }
         blink_flag = false;
+        breathe_flag = BREATHE_OFF;
+        breath_count = 0;
+        pwm_value = PWM_MAXVALUE-1;
         switch(effect_idx) {
             case 0 :
                 set_pulse_rate(1); // 1 Hz
@@ -101,6 +109,18 @@ void tock(void) {
                 set_pulse_rate(100); // Unison blink
                 blink_flag = true;
                 break;
+            case 5:
+                set_pulse_rate(100); // All breath
+                pwm_value = 0;
+                breathe_flag = BREATHE_ALL;
+                pwm_direction = true;
+                break;
+            case 6:
+                set_pulse_rate(100); // All breath
+                pwm_value = 0;
+                breathe_flag = BREATHE_ALT;
+                pwm_direction = true;
+                break;
             default:
                 all_off();
                 pulse_timer.end();
@@ -116,6 +136,8 @@ void tock(void) {
             pulse_timer.end();
             pulse_tick = false;
         }
+    } else if ( breathe_flag) {
+
     }
     
 }
@@ -154,20 +176,63 @@ void setup() {
 
 
 void loop() {
-    if ( delay_tick) {
-        tock();
-    }
+  if ( delay_tick) {
+    tock();
+  }
 
-    if ( pulse_tick ) {
-      pulse_tick = false;
+  if ( pulse_tick ) {
     
+    pulse_tick = false;
+
+    switch (breathe_flag){
+      case BREATHE_ALT:
+        if ( pwm_direction) {
+          if (pwm_value < 200) {
+            pwm_value += 2;
+          } else {
+            breath_count++;
+            pwm_direction = false;
+          }
+        } else {
+          if ( pwm_value > 4) {
+          pwm_value -= 2;
+          } else {
+            breath_count++;
+            pwm_direction = true;
+          }
+        }
+        if ( breath_count < 2 ){
+         bank_one();
+        } else {
+          bank_two();
+        }
+        if ( breath_count > 3) {
+          breath_count = 0;
+        }
+        break;
+      case BREATHE_ALL:
+        if ( pwm_direction) {
+          if (pwm_value < 200) {
+            pwm_value += 2;
+          } else {
+            pwm_direction = false;
+          }
+        } else {
+          if ( pwm_value > 4) {
+          pwm_value -= 2;
+          } else {
+            pwm_direction = true;
+          }
+        }
+      default:
         if ( toggle ) {
           bank_one();
         } else {
           bank_two();
         }
         toggle ^= 1;
-      
     }
-
   }
+
+}
+
