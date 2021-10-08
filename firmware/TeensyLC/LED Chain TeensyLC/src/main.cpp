@@ -8,13 +8,26 @@
 #define PWM_MAXVALUE 100
 
 
-#define EFFECT_LIST 7
+#define EFFECT_LIST 9
 #define MAX_TIME 20
 #define MIN_TIME 10
 
 #define BREATHE_OFF 0
 #define BREATHE_ALL 1
 #define BREATHE_ALT 2
+#define BREATHE_ALL_CORR 3
+#define BREATHE_ALT_CORR 4
+
+uint8_t pwm_gamma[] = {0, 0, 0, 2, 3, 5, 8, 11, 15, 19, 23, 28, 33, 38, 44, 50, 56, 63, 70, 77, 84, 92, 99, 107, 115, 123, 131, 
+                   138, 146, 154, 162, 169, 176, 184, 191, 197, 204, 210, 216, 221, 226, 231, 236, 240, 243, 246, 249, 251, 
+                   253, 254, 255, 255, 255, 254, 253, 251, 249, 246, 243, 240, 236, 231, 226, 221, 216, 210, 204, 197, 191, 
+                   184, 176, 169, 162, 154, 146, 138, 131, 123, 115, 107, 99, 92, 84, 77, 70, 63, 56, 50, 44, 38, 33, 28, 
+                   23, 19, 15, 11, 8, 5, 3, 2, 0, 0};
+uint8_t pwm_idx;
+#define PWM_GAMMA_SIZE 102
+uint8_t gamma_pause;
+#define MAX_GAMMA_PAUSE 10
+uint8_t max_gamma;
 
 IntervalTimer pulse_timer;
 IntervalTimer delay_timer;
@@ -110,17 +123,39 @@ void tock(void) {
                 blink_flag = true;
                 break;
             case 5:
-                set_pulse_rate(100); // All breath
+                set_pulse_rate(100); // All breathe
                 pwm_value = 0;
                 breathe_flag = BREATHE_ALL;
                 pwm_direction = true;
+                pwm_idx = 0;
                 break;
             case 6:
-                set_pulse_rate(100); // All breath
+                set_pulse_rate(100); // Alt breathe
                 pwm_value = 0;
                 breathe_flag = BREATHE_ALT;
                 pwm_direction = true;
+                breath_count = 0;
                 break;
+            case 7:
+                set_pulse_rate(100); // All breathe corrected
+                pwm_value = 0;
+                breathe_flag = BREATHE_ALL_CORR;
+                pwm_direction = true;
+                pwm_idx = 0;
+                gamma_pause = 0;
+                max_gamma = next_random(0, MAX_GAMMA_PAUSE, max_gamma);
+                break;
+            case 8:
+                set_pulse_rate(100); // Alt breathe corrected
+                pwm_value = 0;
+                breathe_flag = BREATHE_ALT_CORR;
+                pwm_direction = true;
+                breath_count = 0;
+                pwm_idx = 0;
+                gamma_pause = 0;
+                max_gamma = next_random(0, MAX_GAMMA_PAUSE, max_gamma);
+                break;
+              
             default:
                 all_off();
                 pulse_timer.end();
@@ -139,7 +174,6 @@ void tock(void) {
     } else if ( breathe_flag) {
 
     }
-    
 }
 
 void setup() {
@@ -172,6 +206,8 @@ void setup() {
 
   set_pulse_rate(5); // Start off with 5Hz
 
+  pwm_idx = 0;
+
 }
 
 
@@ -199,6 +235,9 @@ void loop() {
           } else {
             breath_count++;
             pwm_direction = true;
+            if ( breath_count > 2) {
+              breath_count = 0;
+            }
           }
         }
         if ( breath_count < 2 ){
@@ -206,8 +245,25 @@ void loop() {
         } else {
           bank_two();
         }
-        if ( breath_count > 3) {
-          breath_count = 0;
+        break;
+      case BREATHE_ALT_CORR:
+        gamma_pause++;
+        if( gamma_pause > max_gamma ){
+          gamma_pause = 0;
+          if ( pwm_idx > PWM_GAMMA_SIZE-1 ) {
+            pwm_idx = 0;
+            breath_count++;
+            if ( breath_count > 1 ) {
+              breath_count = 0;
+            }
+          }
+          pwm_value = pwm_gamma[pwm_idx];
+          pwm_idx++;
+        }
+        if ( breath_count < 1 ){
+         bank_one();
+        } else {
+          bank_two();
         }
         break;
       case BREATHE_ALL:
@@ -222,6 +278,23 @@ void loop() {
           pwm_value -= 2;
           } else {
             pwm_direction = true;
+          }
+        }
+        if ( toggle ) {
+          bank_one();
+        } else {
+          bank_two();
+        }
+        toggle ^= 1;
+        break;
+      case BREATHE_ALL_CORR:
+        gamma_pause++;
+        if( gamma_pause > max_gamma ){
+          gamma_pause = 0;
+          pwm_value = pwm_gamma[pwm_idx];
+          pwm_idx++;
+          if ( pwm_idx >= PWM_GAMMA_SIZE ) {
+            pwm_idx = 0;
           }
         }
       default:

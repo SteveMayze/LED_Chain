@@ -1,0 +1,588 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!-- Created with Fritzing (http://www.fritzing.org/) -->
+<svg xmlns="http://www.w3.org/2000/svg"  y="0in" baseProfile="tiny" version="1.2" width="1.1in" x="0in" height="2.5in" viewBox="0 0 27.94 63.5">
+    <desc >
+        <referenceFile >teensy_3.1_schematic.svg</referenceFile>
+    </desc>
+    <g  gorn="0.1" id="schematic">
+        <rect  y="5.23875" width="17.4625" stroke="#000000" class="interior rect" x="5.23875" stroke-linecap="round" stroke-width="0.3175" fill="#FFFFFF" height="53.0225"/>
+        <line  gorn="0.1.1" id="connector1pin" stroke="#787878" class="pin" x1="22.7365" stroke-linecap="round" stroke-width="0.246944" y2="12.7" fill="none" x2="27.8165" y1="12.7"/>
+        <text  y="12.3296" stroke="none" class="text" x="25.2765" text-anchor="middle" stroke-width="0" font-size="0.881944" fill="#8c8c8c" font-family="'Droid Sans'">2</text>
+        <text  y="12.9469" stroke="none" class="text" x="22.2426" text-anchor="end" stroke-width="0" font-size="1.23472" fill="#8c8c8c" font-family="'Droid Sans'">D0</text>
+        <rect  y="12.5765" gorn="0.1.4" id="connector1terminal" width="0.246944" stroke="none" class="terminal" x="27.8165" stroke-width="0" fill="none" height="0.246944"/>
+        <line  gorn="0.1.5" id="connector2pin" stroke="#787878" class="pin" x1="22.7365" stroke-linecap="round" stroke-width="0.246944" y2="15.24" fill="none" x2="27.8165" y1="15.24"/>
+        <text  y="14.8696" stroke="none" class="text" x="25.2765" text-anchor="middle" stroke-width="0" font-size="0.881944" fill="#8c8c8c" font-family="'Droid Sans'">3</text>
+        <text  y="15.4869" stroke="none" class="text" x="22.2426" text-anchor="end" stroke-width="0" font-size="1.23472" fill="#8c8c8c" font-family="'Droid Sans'">D1</text>
+        <rect  y="15.1165" gorn="0.1.8" id="connector2terminal" width="0.246944" stroke="none" class="terminal" x="27.8165" stroke-width="0" fill="none" height="0.246944"/>
+        <line  gorn="0.1.9" id="connector3pin" stroke="#787878" class="pin" x1="22.7365" stroke-linecap="round" stroke-width="0.246944" y2="17.78" fill="none" x2="27.8165" y1="17.78"/>
+        <text  y="17.4096" stroke="none" class="text" x="25.2765" text-anchor="middle" stroke-width="0" font-size="0.881944" fill="#8c8c8c" font-family="'Droid Sans'">4</text>
+        <text  y="18.0269" stroke="none" class="text" x="22.2426" text-anchor="end" stroke-width="0" font-size="1.23472" fill="#8c8c8c" font-family="'Droid Sans'">D2</text>
+        <rect  y="17.6565" gorn="0.1.12" id="connector3terminal" width="0.246944" stroke="none" class="terminal" x="27.8165" stroke-width="0" fill="none" height="0.246944"/>
+        <line  gorn="0.1.13" id="connector4pin" stroke="#787878" class="pin" x1="22.7365" stroke-linecap="round" stroke-width="0.246944" y2="20.32" fill="none" x2="27.8165" y1="20.32"/>
+        <text  y="19.9496" stroke="none" class="text" x="25.2765" text-anchor="middle" stroke-width="0" font-size="0.881944" fill="#8c8c8c" font-family="'Droid Sans'">5</text>
+        <text  y="20.5669" stroke="none" class="text" x="22.2426" text-anchor="end" stroke-width="0" font-size="1.23472" fill="#8c8c8c" font-family="'Droid Sans'">D3</text>
+        <rect  y="20.1965" gorn="0.1.16" id="connector4terminal" width="0.246944" stroke="none" class="terminal" x="27.8165" stroke-width="0" fill="none" height="0.246944"/>
+        <line  gorn="0.1.17" id="connector5pin" stroke="#787878" class="pin" x1="22.7365" stroke-linecap="round" stroke-width="0.246944" y2="22.86" fill="none" x2="27.8165" y1="22.86"/>
+        <text  y="22.4896" stroke="none" class="text" x="25.2765" text-anchor="middle" stroke-width="0" font-size="0.881944" fill="#8c8c8c" font-family="'Droid Sans'">6</text>
+        <text  y="23.1069" stroke="none" class="text" x="22.2426" text-anchor="end" stroke-width="0" font-size="1.23472" fill="#8c8c8c" font-family="'Droid Sans'">D4</text>
+        <rect  y="22.7365" gorn="0.1.20" id="connector5terminal" width="0.246944" stroke="none" class="terminal" x="27.8165" stroke-width="0" fill="none" height="0.246944"/>
+        <line  gorn="0.1.21" id="connector6pin" stroke="#787878" class="pin" x1="22.7365" stroke-linecap="round" stroke-width="0.246944" y2="25.4" fill="none" x2="27.8165" y1="25.4"/>
+        <text  y="25.0296" stroke="none" class="text" x="25.2765" text-anchor="middle" stroke-width="0" font-size="0.881944" fill="#8c8c8c" font-family="'Droid Sans'">7</text>
+        <text  y="25.6469" stroke="none" class="text" x="22.2426" text-anchor="end" stroke-width="0" font-size="1.23472" fill="#8c8c8c" font-family="'Droid Sans'">D5</text>
+        <rect  y="25.2765" gorn="0.1.24" id="connector6terminal" width="0.246944" stroke="none" class="terminal" x="27.8165" stroke-width="0" fill="none" height="0.246944"/>
+        <line  gorn="0.1.25" id="connector7pin" stroke="#787878" class="pin" x1="22.7365" stroke-linecap="round" stroke-width="0.246944" y2="27.94" fill="none" x2="27.8165" y1="27.94"/>
+        <text  y="27.5696" stroke="none" class="text" x="25.2765" text-anchor="middle" stroke-width="0" font-size="0.881944" fill="#8c8c8c" font-family="'Droid Sans'">8</text>
+        <text  y="28.1869" stroke="none" class="text" x="22.2426" text-anchor="end" stroke-width="0" font-size="1.23472" fill="#8c8c8c" font-family="'Droid Sans'">D6</text>
+        <rect  y="27.8165" gorn="0.1.28" id="connector7terminal" width="0.246944" stroke="none" class="terminal" x="27.8165" stroke-width="0" fill="none" height="0.246944"/>
+        <line  gorn="0.1.29" id="connector8pin" stroke="#787878" class="pin" x1="22.7365" stroke-linecap="round" stroke-width="0.246944" y2="30.48" fill="none" x2="27.8165" y1="30.48"/>
+        <text  y="30.1096" stroke="none" class="text" x="25.2765" text-anchor="middle" stroke-width="0" font-size="0.881944" fill="#8c8c8c" font-family="'Droid Sans'">9</text>
+        <text  y="30.7269" stroke="none" class="text" x="22.2426" text-anchor="end" stroke-width="0" font-size="1.23472" fill="#8c8c8c" font-family="'Droid Sans'">D7</text>
+        <rect  y="30.3565" gorn="0.1.32" id="connector8terminal" width="0.246944" stroke="none" class="terminal" x="27.8165" stroke-width="0" fill="none" height="0.246944"/>
+        <line  gorn="0.1.33" id="connector9pin" stroke="#787878" class="pin" x1="22.7365" stroke-linecap="round" stroke-width="0.246944" y2="33.02" fill="none" x2="27.8165" y1="33.02"/>
+        <text  y="32.6496" stroke="none" class="text" x="25.2765" text-anchor="middle" stroke-width="0" font-size="0.881944" fill="#8c8c8c" font-family="'Droid Sans'">10</text>
+        <text  y="33.2669" stroke="none" class="text" x="22.2426" text-anchor="end" stroke-width="0" font-size="1.23472" fill="#8c8c8c" font-family="'Droid Sans'">D8</text>
+        <rect  y="32.8965" gorn="0.1.36" id="connector9terminal" width="0.246944" stroke="none" class="terminal" x="27.8165" stroke-width="0" fill="none" height="0.246944"/>
+        <line  gorn="0.1.37" id="connector10pin" stroke="#787878" class="pin" x1="22.7365" stroke-linecap="round" stroke-width="0.246944" y2="35.56" fill="none" x2="27.8165" y1="35.56"/>
+        <text  y="35.1896" stroke="none" class="text" x="25.2765" text-anchor="middle" stroke-width="0" font-size="0.881944" fill="#8c8c8c" font-family="'Droid Sans'">11</text>
+        <text  y="35.8069" stroke="none" class="text" x="22.2426" text-anchor="end" stroke-width="0" font-size="1.23472" fill="#8c8c8c" font-family="'Droid Sans'">D9</text>
+        <rect  y="35.4365" gorn="0.1.40" id="connector10terminal" width="0.246944" stroke="none" class="terminal" x="27.8165" stroke-width="0" fill="none" height="0.246944"/>
+        <line  gorn="0.1.41" id="connector11pin" stroke="#787878" class="pin" x1="22.7365" stroke-linecap="round" stroke-width="0.246944" y2="38.1" fill="none" x2="27.8165" y1="38.1"/>
+        <text  y="37.7296" stroke="none" class="text" x="25.2765" text-anchor="middle" stroke-width="0" font-size="0.881944" fill="#8c8c8c" font-family="'Droid Sans'">12</text>
+        <text  y="38.3469" stroke="none" class="text" x="22.2426" text-anchor="end" stroke-width="0" font-size="1.23472" fill="#8c8c8c" font-family="'Droid Sans'">D10</text>
+        <rect  y="37.9765" gorn="0.1.44" id="connector11terminal" width="0.246944" stroke="none" class="terminal" x="27.8165" stroke-width="0" fill="none" height="0.246944"/>
+        <line  gorn="0.1.45" id="connector12pin" stroke="#787878" class="pin" x1="22.7365" stroke-linecap="round" stroke-width="0.246944" y2="40.64" fill="none" x2="27.8165" y1="40.64"/>
+        <text  y="40.2696" stroke="none" class="text" x="25.2765" text-anchor="middle" stroke-width="0" font-size="0.881944" fill="#8c8c8c" font-family="'Droid Sans'">13</text>
+        <text  y="40.8869" stroke="none" class="text" x="22.2426" text-anchor="end" stroke-width="0" font-size="1.23472" fill="#8c8c8c" font-family="'Droid Sans'">D11</text>
+        <rect  y="40.5165" gorn="0.1.48" id="connector12terminal" width="0.246944" stroke="none" class="terminal" x="27.8165" stroke-width="0" fill="none" height="0.246944"/>
+        <line  gorn="0.1.49" id="connector13pin" stroke="#787878" class="pin" x1="22.7365" stroke-linecap="round" stroke-width="0.246944" y2="43.18" fill="none" x2="27.8165" y1="43.18"/>
+        <text  y="42.8096" stroke="none" class="text" x="25.2765" text-anchor="middle" stroke-width="0" font-size="0.881944" fill="#8c8c8c" font-family="'Droid Sans'">14</text>
+        <text  y="43.4269" stroke="none" class="text" x="22.2426" text-anchor="end" stroke-width="0" font-size="1.23472" fill="#8c8c8c" font-family="'Droid Sans'">D12</text>
+        <rect  y="43.0565" gorn="0.1.52" id="connector13terminal" width="0.246944" stroke="none" class="terminal" x="27.8165" stroke-width="0" fill="none" height="0.246944"/>
+        <line  gorn="0.1.53" id="connector19pin" stroke="#787878" class="pin" x1="22.7365" stroke-linecap="round" stroke-width="0.246944" y2="45.72" fill="none" x2="27.8165" y1="45.72"/>
+        <text  y="45.3496" stroke="none" class="text" x="25.2765" text-anchor="middle" stroke-width="0" font-size="0.881944" fill="#8c8c8c" font-family="'Droid Sans'">20</text>
+        <text  y="45.9669" stroke="none" class="text" x="22.2426" text-anchor="end" stroke-width="0" font-size="1.23472" fill="#8c8c8c" font-family="'Droid Sans'">D13</text>
+        <rect  y="45.5965" gorn="0.1.56" id="connector19terminal" width="0.246944" stroke="none" class="terminal" x="27.8165" stroke-width="0" fill="none" height="0.246944"/>
+        <line  gorn="0.1.57" id="connector18pin" stroke="#787878" class="pin" x1="0.123472" stroke-linecap="round" stroke-width="0.246944" y2="12.7" fill="none" x2="5.20347" y1="12.7"/>
+        <text  y="12.3296" stroke="none" class="text" x="2.66347" text-anchor="middle" stroke-width="0" font-size="0.881944" fill="#8c8c8c" font-family="'Droid Sans'">19</text>
+        <text  y="12.9469" stroke="none" class="text" x="5.69736" text-anchor="start" stroke-width="0" font-size="1.23472" fill="#8c8c8c" font-family="'Droid Sans'">A14/DAC</text>
+        <rect  y="12.5765" gorn="0.1.60" id="connector18terminal" width="0.246944" stroke="none" class="terminal" x="-0.123472" stroke-width="0" fill="none" height="0.246944"/>
+        <line  gorn="0.1.61" id="connector35pin" stroke="#787878" class="pin" x1="0.123472" stroke-linecap="round" stroke-width="0.246944" y2="15.24" fill="none" x2="5.20347" y1="15.24"/>
+        <text  y="14.8696" stroke="none" class="text" x="2.66347" text-anchor="middle" stroke-width="0" font-size="0.881944" fill="#8c8c8c" font-family="'Droid Sans'">36</text>
+        <text  y="15.4869" stroke="none" class="text" x="5.69736" text-anchor="start" stroke-width="0" font-size="1.23472" fill="#8c8c8c" font-family="'Droid Sans'">AREF</text>
+        <rect  y="15.1165" gorn="0.1.64" id="connector35terminal" width="0.246944" stroke="none" class="terminal" x="-0.123472" stroke-width="0" fill="none" height="0.246944"/>
+        <line  gorn="0.1.65" id="connector17pin" stroke="#787878" class="pin" x1="0.123472" stroke-linecap="round" stroke-width="0.246944" y2="17.78" fill="none" x2="5.20347" y1="17.78"/>
+        <text  y="17.4096" stroke="none" class="text" x="2.66347" text-anchor="middle" stroke-width="0" font-size="0.881944" fill="#8c8c8c" font-family="'Droid Sans'">18</text>
+        <text  y="18.0269" stroke="none" class="text" x="5.69736" text-anchor="start" stroke-width="0" font-size="1.23472" fill="#8c8c8c" font-family="'Droid Sans'">Program</text>
+        <rect  y="17.6565" gorn="0.1.68" id="connector17terminal" width="0.246944" stroke="none" class="terminal" x="-0.123472" stroke-width="0" fill="none" height="0.246944"/>
+        <line  gorn="0.1.69" id="connector20pin" stroke="#787878" class="pin" x1="0.123472" stroke-linecap="round" stroke-width="0.246944" y2="22.86" fill="none" x2="5.20347" y1="22.86"/>
+        <text  y="22.4896" stroke="none" class="text" x="2.66347" text-anchor="middle" stroke-width="0" font-size="0.881944" fill="#8c8c8c" font-family="'Droid Sans'">21</text>
+        <text  y="23.1069" stroke="none" class="text" x="5.69736" text-anchor="start" stroke-width="0" font-size="1.23472" fill="#8c8c8c" font-family="'Droid Sans'">A0/D14</text>
+        <rect  y="22.7365" gorn="0.1.72" id="connector20terminal" width="0.246944" stroke="none" class="terminal" x="-0.123472" stroke-width="0" fill="none" height="0.246944"/>
+        <line  gorn="0.1.73" id="connector21pin" stroke="#787878" class="pin" x1="0.123472" stroke-linecap="round" stroke-width="0.246944" y2="25.4" fill="none" x2="5.20347" y1="25.4"/>
+        <text  y="25.0296" stroke="none" class="text" x="2.66347" text-anchor="middle" stroke-width="0" font-size="0.881944" fill="#8c8c8c" font-family="'Droid Sans'">22</text>
+        <text  y="25.6469" stroke="none" class="text" x="5.69736" text-anchor="start" stroke-width="0" font-size="1.23472" fill="#8c8c8c" font-family="'Droid Sans'">A1/D15</text>
+        <rect  y="25.2765" gorn="0.1.76" id="connector21terminal" width="0.246944" stroke="none" class="terminal" x="-0.123472" stroke-width="0" fill="none" height="0.246944"/>
+        <line  gorn="0.1.77" id="connector22pin" stroke="#787878" class="pin" x1="0.123472" stroke-linecap="round" stroke-width="0.246944" y2="27.94" fill="none" x2="5.20347" y1="27.94"/>
+        <text  y="27.5696" stroke="none" class="text" x="2.66347" text-anchor="middle" stroke-width="0" font-size="0.881944" fill="#8c8c8c" font-family="'Droid Sans'">23</text>
+        <text  y="28.1869" stroke="none" class="text" x="5.69736" text-anchor="start" stroke-width="0" font-size="1.23472" fill="#8c8c8c" font-family="'Droid Sans'">A2/D16</text>
+        <rect  y="27.8165" gorn="0.1.80" id="connector22terminal" width="0.246944" stroke="none" class="terminal" x="-0.123472" stroke-width="0" fill="none" height="0.246944"/>
+        <line  gorn="0.1.81" id="connector23pin" stroke="#787878" class="pin" x1="0.123472" stroke-linecap="round" stroke-width="0.246944" y2="30.48" fill="none" x2="5.20347" y1="30.48"/>
+        <text  y="30.1096" stroke="none" class="text" x="2.66347" text-anchor="middle" stroke-width="0" font-size="0.881944" fill="#8c8c8c" font-family="'Droid Sans'">24</text>
+        <text  y="30.7269" stroke="none" class="text" x="5.69736" text-anchor="start" stroke-width="0" font-size="1.23472" fill="#8c8c8c" font-family="'Droid Sans'">A3/D17</text>
+        <rect  y="30.3565" gorn="0.1.84" id="connector23terminal" width="0.246944" stroke="none" class="terminal" x="-0.123472" stroke-width="0" fill="none" height="0.246944"/>
+        <line  gorn="0.1.85" id="connector24pin" stroke="#787878" class="pin" x1="0.123472" stroke-linecap="round" stroke-width="0.246944" y2="33.02" fill="none" x2="5.20347" y1="33.02"/>
+        <text  y="32.6496" stroke="none" class="text" x="2.66347" text-anchor="middle" stroke-width="0" font-size="0.881944" fill="#8c8c8c" font-family="'Droid Sans'">25</text>
+        <text  y="33.2669" stroke="none" class="text" x="5.69736" text-anchor="start" stroke-width="0" font-size="1.23472" fill="#8c8c8c" font-family="'Droid Sans'">A4/D18</text>
+        <rect  y="32.8965" gorn="0.1.88" id="connector24terminal" width="0.246944" stroke="none" class="terminal" x="-0.123472" stroke-width="0" fill="none" height="0.246944"/>
+        <line  gorn="0.1.89" id="connector25pin" stroke="#787878" class="pin" x1="0.123472" stroke-linecap="round" stroke-width="0.246944" y2="35.56" fill="none" x2="5.20347" y1="35.56"/>
+        <text  y="35.1896" stroke="none" class="text" x="2.66347" text-anchor="middle" stroke-width="0" font-size="0.881944" fill="#8c8c8c" font-family="'Droid Sans'">26</text>
+        <text  y="35.8069" stroke="none" class="text" x="5.69736" text-anchor="start" stroke-width="0" font-size="1.23472" fill="#8c8c8c" font-family="'Droid Sans'">A5/D19</text>
+        <rect  y="35.4365" gorn="0.1.92" id="connector25terminal" width="0.246944" stroke="none" class="terminal" x="-0.123472" stroke-width="0" fill="none" height="0.246944"/>
+        <line  gorn="0.1.93" id="connector26pin" stroke="#787878" class="pin" x1="0.123472" stroke-linecap="round" stroke-width="0.246944" y2="38.1" fill="none" x2="5.20347" y1="38.1"/>
+        <text  y="37.7296" stroke="none" class="text" x="2.66347" text-anchor="middle" stroke-width="0" font-size="0.881944" fill="#8c8c8c" font-family="'Droid Sans'">27</text>
+        <text  y="38.3469" stroke="none" class="text" x="5.69736" text-anchor="start" stroke-width="0" font-size="1.23472" fill="#8c8c8c" font-family="'Droid Sans'">A6/D20</text>
+        <rect  y="37.9765" gorn="0.1.96" id="connector26terminal" width="0.246944" stroke="none" class="terminal" x="-0.123472" stroke-width="0" fill="none" height="0.246944"/>
+        <line  gorn="0.1.97" id="connector27pin" stroke="#787878" class="pin" x1="0.123472" stroke-linecap="round" stroke-width="0.246944" y2="40.64" fill="none" x2="5.20347" y1="40.64"/>
+        <text  y="40.2696" stroke="none" class="text" x="2.66347" text-anchor="middle" stroke-width="0" font-size="0.881944" fill="#8c8c8c" font-family="'Droid Sans'">28</text>
+        <text  y="40.8869" stroke="none" class="text" x="5.69736" text-anchor="start" stroke-width="0" font-size="1.23472" fill="#8c8c8c" font-family="'Droid Sans'">A7/D21</text>
+        <rect  y="40.5165" gorn="0.1.100" id="connector27terminal" width="0.246944" stroke="none" class="terminal" x="-0.123472" stroke-width="0" fill="none" height="0.246944"/>
+        <line  gorn="0.1.101" id="connector28pin" stroke="#787878" class="pin" x1="0.123472" stroke-linecap="round" stroke-width="0.246944" y2="43.18" fill="none" x2="5.20347" y1="43.18"/>
+        <text  y="42.8096" stroke="none" class="text" x="2.66347" text-anchor="middle" stroke-width="0" font-size="0.881944" fill="#8c8c8c" font-family="'Droid Sans'">29</text>
+        <text  y="43.4269" stroke="none" class="text" x="5.69736" text-anchor="start" stroke-width="0" font-size="1.23472" fill="#8c8c8c" font-family="'Droid Sans'">A8/D22</text>
+        <rect  y="43.0565" gorn="0.1.104" id="connector28terminal" width="0.246944" stroke="none" class="terminal" x="-0.123472" stroke-width="0" fill="none" height="0.246944"/>
+        <line  gorn="0.1.105" id="connector29pin" stroke="#787878" class="pin" x1="0.123472" stroke-linecap="round" stroke-width="0.246944" y2="45.72" fill="none" x2="5.20347" y1="45.72"/>
+        <text  y="45.3496" stroke="none" class="text" x="2.66347" text-anchor="middle" stroke-width="0" font-size="0.881944" fill="#8c8c8c" font-family="'Droid Sans'">30</text>
+        <text  y="45.9669" stroke="none" class="text" x="5.69736" text-anchor="start" stroke-width="0" font-size="1.23472" fill="#8c8c8c" font-family="'Droid Sans'">A9/D23</text>
+        <rect  y="45.5965" gorn="0.1.108" id="connector29terminal" width="0.246944" stroke="none" class="terminal" x="-0.123472" stroke-width="0" fill="none" height="0.246944"/>
+        <line  gorn="0.1.109" id="connector34pin" stroke="#787878" class="pin" x1="0.123472" stroke-linecap="round" stroke-width="0.246944" y2="48.26" fill="none" x2="5.20347" y1="48.26"/>
+        <text  y="47.8896" stroke="none" class="text" x="2.66347" text-anchor="middle" stroke-width="0" font-size="0.881944" fill="#8c8c8c" font-family="'Droid Sans'">35</text>
+        <text  y="48.5069" stroke="none" class="text" x="5.69736" text-anchor="start" stroke-width="0" font-size="1.23472" fill="#8c8c8c" font-family="'Droid Sans'">A10</text>
+        <rect  y="48.1365" gorn="0.1.112" id="connector34terminal" width="0.246944" stroke="none" class="terminal" x="-0.123472" stroke-width="0" fill="none" height="0.246944"/>
+        <line  gorn="0.1.113" id="connector33pin" stroke="#787878" class="pin" x1="0.123472" stroke-linecap="round" stroke-width="0.246944" y2="50.8" fill="none" x2="5.20347" y1="50.8"/>
+        <text  y="50.4296" stroke="none" class="text" x="2.66347" text-anchor="middle" stroke-width="0" font-size="0.881944" fill="#8c8c8c" font-family="'Droid Sans'">34</text>
+        <text  y="51.0469" stroke="none" class="text" x="5.69736" text-anchor="start" stroke-width="0" font-size="1.23472" fill="#8c8c8c" font-family="'Droid Sans'">A11</text>
+        <rect  y="50.6765" gorn="0.1.116" id="connector33terminal" width="0.246944" stroke="none" class="terminal" x="-0.123472" stroke-width="0" fill="none" height="0.246944"/>
+        <line  gorn="0.1.117" id="connector31pin" stroke="#787878" class="pin" x1="12.7" stroke-linecap="round" stroke-width="0.246944" y2="63.3765" fill="none" x2="12.7" y1="58.2965"/>
+        <g  transform="translate(12.3296,60.8365)">
+            <g >
+                <g >
+                    <g >
+                        <g >
+                            <g >
+                                <g >
+                                    <g >
+                                        <g >
+                                            <g  transform="rotate(270)">
+                                                <g >
+                                                    <g >
+                                                        <g >
+                                                            <g >
+                                                                <g >
+                                                                    <g >
+                                                                        <g >
+                                                                            <g >
+                                                                                <text  y="0" stroke="none" class="text" x="0" text-anchor="middle" stroke-width="0" font-size="0.881944" fill="#8c8c8c" font-family="'Droid Sans'">32</text>
+                                                                            </g>
+                                                                        </g>
+                                                                    </g>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g  transform="translate(12.9469,57.8026)">
+            <g >
+                <g >
+                    <g >
+                        <g >
+                            <g >
+                                <g >
+                                    <g >
+                                        <g >
+                                            <g  transform="rotate(270)">
+                                                <g >
+                                                    <g >
+                                                        <g >
+                                                            <g >
+                                                                <g >
+                                                                    <g >
+                                                                        <g >
+                                                                            <g >
+                                                                                <text  y="0" stroke="none" class="text" x="0" text-anchor="start" stroke-width="0" font-size="1.23472" fill="#8c8c8c" font-family="'Droid Sans'">AGND</text>
+                                                                            </g>
+                                                                        </g>
+                                                                    </g>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <rect  y="63.3765" gorn="0.1.120" id="connector31terminal" width="0.246944" stroke="none" class="terminal" x="12.5765" stroke-width="0" fill="none" height="0.246944"/>
+        <line  gorn="0.1.121" id="connector16pin" stroke="none" class="pin" x1="17.78" stroke-linecap="round" stroke-width="0" y2="63.3765" fill="none" x2="17.78" y1="58.2965"/>
+        <rect  y="63.3765" gorn="0.1.122" id="connector16terminal" width="0.246944" stroke="none" class="terminal" x="17.6565" stroke-width="0" fill="none" height="0.246944"/>
+        <line  gorn="0.1.123" id="connector0pin" stroke="#787878" class="pin" x1="17.78" stroke-linecap="round" stroke-width="0.246944" y2="63.3765" fill="none" x2="17.78" y1="58.2965"/>
+        <g  transform="translate(17.4096,60.8365)">
+            <g >
+                <g >
+                    <g >
+                        <g >
+                            <g >
+                                <g >
+                                    <g >
+                                        <g >
+                                            <g  transform="rotate(270)">
+                                                <g >
+                                                    <g >
+                                                        <g >
+                                                            <g >
+                                                                <g >
+                                                                    <g >
+                                                                        <g >
+                                                                            <g >
+                                                                                <text  y="0" stroke="none" class="text" x="0" text-anchor="middle" stroke-width="0" font-size="0.881944" fill="#8c8c8c" font-family="'Droid Sans'">1</text>
+                                                                            </g>
+                                                                        </g>
+                                                                    </g>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g  transform="translate(18.0269,57.8026)">
+            <g >
+                <g >
+                    <g >
+                        <g >
+                            <g >
+                                <g >
+                                    <g >
+                                        <g >
+                                            <g  transform="rotate(270)">
+                                                <g >
+                                                    <g >
+                                                        <g >
+                                                            <g >
+                                                                <g >
+                                                                    <g >
+                                                                        <g >
+                                                                            <g >
+                                                                                <text  y="0" stroke="none" class="text" x="0" text-anchor="start" stroke-width="0" font-size="1.23472" fill="#8c8c8c" font-family="'Droid Sans'">GND</text>
+                                                                            </g>
+                                                                        </g>
+                                                                    </g>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <rect  y="63.3765" gorn="0.1.126" id="connector0terminal" width="0.246944" stroke="none" class="terminal" x="17.6565" stroke-width="0" fill="none" height="0.246944"/>
+        <line  gorn="0.1.127" id="connector15pin" stroke="#787878" class="pin" x1="10.16" stroke-linecap="round" stroke-width="0.246944" y2="5.20347" fill="none" x2="10.16" y1="0.123472"/>
+        <g  transform="translate(9.78958,2.66347)">
+            <g >
+                <g >
+                    <g >
+                        <g >
+                            <g >
+                                <g >
+                                    <g >
+                                        <g >
+                                            <g  transform="rotate(270)">
+                                                <g >
+                                                    <g >
+                                                        <g >
+                                                            <g >
+                                                                <g >
+                                                                    <g >
+                                                                        <g >
+                                                                            <g >
+                                                                                <text  y="0" stroke="none" class="text" x="0" text-anchor="middle" stroke-width="0" font-size="0.881944" fill="#8c8c8c" font-family="'Droid Sans'">16</text>
+                                                                            </g>
+                                                                        </g>
+                                                                    </g>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g  transform="translate(10.4069,5.69736)">
+            <g >
+                <g >
+                    <g >
+                        <g >
+                            <g >
+                                <g >
+                                    <g >
+                                        <g >
+                                            <g  transform="rotate(270)">
+                                                <g >
+                                                    <g >
+                                                        <g >
+                                                            <g >
+                                                                <g >
+                                                                    <g >
+                                                                        <g >
+                                                                            <g >
+                                                                                <text  y="0" stroke="none" class="text" x="0" text-anchor="end" stroke-width="0" font-size="1.23472" fill="#8c8c8c" font-family="'Droid Sans'">3V3</text>
+                                                                            </g>
+                                                                        </g>
+                                                                    </g>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <rect  y="-0.123472" gorn="0.1.130" id="connector15terminal" width="0.246944" stroke="none" class="terminal" x="10.0365" stroke-width="0" fill="none" height="0.246944"/>
+        <line  gorn="0.1.131" id="connector30pin" stroke="none" class="pin" x1="12.7" stroke-linecap="round" stroke-width="0" y2="5.20347" fill="none" x2="12.7" y1="0.123472"/>
+        <rect  y="-0.123472" gorn="0.1.132" id="connector30terminal" width="0.246944" stroke="none" class="terminal" x="12.5765" stroke-width="0" fill="none" height="0.246944"/>
+        <line  gorn="0.1.133" id="connector32pin" stroke="#787878" class="pin" x1="12.7" stroke-linecap="round" stroke-width="0.246944" y2="5.20347" fill="none" x2="12.7" y1="0.123472"/>
+        <g  transform="translate(12.3296,2.66347)">
+            <g >
+                <g >
+                    <g >
+                        <g >
+                            <g >
+                                <g >
+                                    <g >
+                                        <g >
+                                            <g  transform="rotate(270)">
+                                                <g >
+                                                    <g >
+                                                        <g >
+                                                            <g >
+                                                                <g >
+                                                                    <g >
+                                                                        <g >
+                                                                            <g >
+                                                                                <text  y="0" stroke="none" class="text" x="0" text-anchor="middle" stroke-width="0" font-size="0.881944" fill="#8c8c8c" font-family="'Droid Sans'">33</text>
+                                                                            </g>
+                                                                        </g>
+                                                                    </g>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g  transform="translate(12.9469,5.69736)">
+            <g >
+                <g >
+                    <g >
+                        <g >
+                            <g >
+                                <g >
+                                    <g >
+                                        <g >
+                                            <g  transform="rotate(270)">
+                                                <g >
+                                                    <g >
+                                                        <g >
+                                                            <g >
+                                                                <g >
+                                                                    <g >
+                                                                        <g >
+                                                                            <g >
+                                                                                <text  y="0" stroke="none" class="text" x="0" text-anchor="end" stroke-width="0" font-size="1.23472" fill="#8c8c8c" font-family="'Droid Sans'">Vin</text>
+                                                                            </g>
+                                                                        </g>
+                                                                    </g>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <rect  y="-0.123472" gorn="0.1.136" id="connector32terminal" width="0.246944" stroke="none" class="terminal" x="12.5765" stroke-width="0" fill="none" height="0.246944"/>
+        <line  gorn="0.1.137" id="connector14pin" stroke="#787878" class="pin" x1="15.24" stroke-linecap="round" stroke-width="0.246944" y2="5.20347" fill="none" x2="15.24" y1="0.123472"/>
+        <g  transform="translate(14.8696,2.66347)">
+            <g >
+                <g >
+                    <g >
+                        <g >
+                            <g >
+                                <g >
+                                    <g >
+                                        <g >
+                                            <g  transform="rotate(270)">
+                                                <g >
+                                                    <g >
+                                                        <g >
+                                                            <g >
+                                                                <g >
+                                                                    <g >
+                                                                        <g >
+                                                                            <g >
+                                                                                <text  y="0" stroke="none" class="text" x="0" text-anchor="middle" stroke-width="0" font-size="0.881944" fill="#8c8c8c" font-family="'Droid Sans'">15</text>
+                                                                            </g>
+                                                                        </g>
+                                                                    </g>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g  transform="translate(15.4869,5.69736)">
+            <g >
+                <g >
+                    <g >
+                        <g >
+                            <g >
+                                <g >
+                                    <g >
+                                        <g >
+                                            <g  transform="rotate(270)">
+                                                <g >
+                                                    <g >
+                                                        <g >
+                                                            <g >
+                                                                <g >
+                                                                    <g >
+                                                                        <g >
+                                                                            <g >
+                                                                                <text  y="0" stroke="none" class="text" x="0" text-anchor="end" stroke-width="0" font-size="1.23472" fill="#8c8c8c" font-family="'Droid Sans'">VBat</text>
+                                                                            </g>
+                                                                        </g>
+                                                                    </g>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <rect  y="-0.123472" gorn="0.1.140" id="connector14terminal" width="0.246944" stroke="none" class="terminal" x="15.1165" stroke-width="0" fill="none" height="0.246944"/>
+        <line  gorn="0.1.141" id="connector36pin" stroke="#787878" class="pin" x1="17.78" stroke-linecap="round" stroke-width="0.246944" y2="5.20347" fill="none" x2="17.78" y1="0.123472"/>
+        <g  transform="translate(17.4096,2.66347)">
+            <g >
+                <g >
+                    <g >
+                        <g >
+                            <g >
+                                <g >
+                                    <g >
+                                        <g >
+                                            <g  transform="rotate(270)">
+                                                <g >
+                                                    <g >
+                                                        <g >
+                                                            <g >
+                                                                <g >
+                                                                    <g >
+                                                                        <g >
+                                                                            <g >
+                                                                                <text  y="0" stroke="none" class="text" x="0" text-anchor="middle" stroke-width="0" font-size="0.881944" fill="#8c8c8c" font-family="'Droid Sans'">37</text>
+                                                                            </g>
+                                                                        </g>
+                                                                    </g>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g  transform="translate(18.0269,5.69736)">
+            <g >
+                <g >
+                    <g >
+                        <g >
+                            <g >
+                                <g >
+                                    <g >
+                                        <g >
+                                            <g  transform="rotate(270)">
+                                                <g >
+                                                    <g >
+                                                        <g >
+                                                            <g >
+                                                                <g >
+                                                                    <g >
+                                                                        <g >
+                                                                            <g >
+                                                                                <text  y="0" stroke="none" class="text" x="0" text-anchor="end" stroke-width="0" font-size="1.23472" fill="#8c8c8c" font-family="'Droid Sans'">VUSB</text>
+                                                                            </g>
+                                                                        </g>
+                                                                    </g>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <rect  y="-0.123472" gorn="0.1.144" id="connector36terminal" width="0.246944" stroke="none" class="terminal" x="17.6565" stroke-width="0" fill="none" height="0.246944"/>
+        <text  y="30.3094" gorn="0.1.145" id="label" stroke="none" class="text" x="14.1288" text-anchor="middle" stroke-width="0" font-size="1.49931" fill="#000000" font-family="'Droid Sans'">Teensy</text>
+        <text  y="31.9088" gorn="0.1.146" id="label" stroke="none" class="text" x="14.1288" text-anchor="middle" stroke-width="0" font-size="1.49931" fill="#000000" font-family="'Droid Sans'">3.1</text>
+    </g>
+</svg>

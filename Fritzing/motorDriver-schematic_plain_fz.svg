@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   width="58.660152"
+   height="61"
+   viewBox="0 0 15.520498 16.139584"
+   version="1.1"
+   id="svg2683">
+  <defs
+     id="defs2677" />
+  <metadata
+     id="metadata2680">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="schematic"
+     transform="translate(-29.711765,-49.00461)">
+    <rect
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="part_symbol"
+       width="11.377084"
+       height="15.875"
+       x="31.75"
+       y="49.136902" />
+    <g
+       id="pin_labels"
+       style="fill:#000000;fill-opacity:1"
+       transform="translate(31.40417,49.043958)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.19062px;line-height:125%;font-family:'Droid Sans Mono';-inkscape-font-specification:'Droid Sans Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="8.3080578"
+         y="6.1184902"
+         id="text3411"><tspan
+           id="tspan3409"
+           x="8.3080578"
+           y="6.1184902"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.19062px;font-family:'Droid Sans Mono';-inkscape-font-specification:'Droid Sans Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px">Out2</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.19062px;line-height:125%;font-family:'Droid Sans Mono';-inkscape-font-specification:'Droid Sans Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="8.4888601"
+         y="9.5202761"
+         id="text3407"><tspan
+           id="tspan3405"
+           x="8.4888601"
+           y="9.5202761"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.19062px;font-family:'Droid Sans Mono';-inkscape-font-specification:'Droid Sans Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px">Out1</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.19062px;line-height:125%;font-family:'Droid Sans Mono';-inkscape-font-specification:'Droid Sans Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="0.68954307"
+         y="12.614956"
+         id="text3403"><tspan
+           id="tspan3401"
+           x="0.68954307"
+           y="12.614956"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.19062px;font-family:'Droid Sans Mono';-inkscape-font-specification:'Droid Sans Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px">PWM</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.19062px;line-height:125%;font-family:'Droid Sans Mono';-inkscape-font-specification:'Droid Sans Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="0.66105658"
+         y="11.173922"
+         id="text3399"><tspan
+           id="tspan3397"
+           x="0.66105658"
+           y="11.173922"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.19062px;font-family:'Droid Sans Mono';-inkscape-font-specification:'Droid Sans Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px">In2</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.19062px;line-height:125%;font-family:'Droid Sans Mono';-inkscape-font-specification:'Droid Sans Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="0.66105658"
+         y="9.7092638"
+         id="text3395"><tspan
+           id="tspan3393"
+           x="0.66105658"
+           y="9.7092638"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.19062px;font-family:'Droid Sans Mono';-inkscape-font-specification:'Droid Sans Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px">In1</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.19062px;line-height:125%;font-family:'Droid Sans Mono';-inkscape-font-specification:'Droid Sans Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="0.7098906"
+         y="8.3863468"
+         id="text3391"><tspan
+           id="tspan3389"
+           x="0.7098906"
+           y="8.3863468"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.19062px;font-family:'Droid Sans Mono';-inkscape-font-specification:'Droid Sans Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px">Standby</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.19062px;line-height:125%;font-family:'Droid Sans Mono';-inkscape-font-specification:'Droid Sans Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="0.77267718"
+         y="5.1263022"
+         id="text3387"><tspan
+           id="tspan3385"
+           x="0.77267718"
+           y="5.1263022"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.19062px;font-family:'Droid Sans Mono';-inkscape-font-specification:'Droid Sans Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px">Vm</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.19062px;line-height:125%;font-family:'Droid Sans Mono';-inkscape-font-specification:'Droid Sans Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="0.77267718"
+         y="3.5435269"
+         id="text3383"><tspan
+           id="tspan3381"
+           x="0.77267718"
+           y="3.5435269"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.19062px;font-family:'Droid Sans Mono';-inkscape-font-specification:'Droid Sans Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px">Vcc</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.19062px;line-height:125%;font-family:'Droid Sans Mono';-inkscape-font-specification:'Droid Sans Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="0.72384316"
+         y="2.0788691"
+         id="text3379"><tspan
+           id="tspan3377"
+           x="0.72384316"
+           y="2.0788691"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.19062px;font-family:'Droid Sans Mono';-inkscape-font-specification:'Droid Sans Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px">GND</tspan></text>
+    </g>
+    <g
+       id="pin_numbers"
+       transform="translate(31.40417,49.043958)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.79375px;line-height:125%;font-family:'Droid Sans Mono';-inkscape-font-specification:'Droid Sans Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="12.833035"
+         y="8.7702303"
+         id="text3337"><tspan
+           id="tspan3335"
+           x="12.833035"
+           y="8.7702303"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.79375px;font-family:'Droid Sans Mono';-inkscape-font-specification:'Droid Sans Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px">8</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.79375px;line-height:125%;font-family:'Droid Sans Mono';-inkscape-font-specification:'Droid Sans Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="12.833035"
+         y="5.321198"
+         id="text3333"><tspan
+           id="tspan3331"
+           x="12.833035"
+           y="5.321198"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.79375px;font-family:'Droid Sans Mono';-inkscape-font-specification:'Droid Sans Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px">9</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.79375px;line-height:125%;font-family:'Droid Sans Mono';-inkscape-font-specification:'Droid Sans Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="-1.0279108"
+         y="12.124769"
+         id="text3329"><tspan
+           id="tspan3327"
+           x="-1.0279108"
+           y="12.124769"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.79375px;font-family:'Droid Sans Mono';-inkscape-font-specification:'Droid Sans Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px">7</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.79375px;line-height:125%;font-family:'Droid Sans Mono';-inkscape-font-specification:'Droid Sans Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="-1.0279108"
+         y="10.713252"
+         id="text3325"><tspan
+           id="tspan3323"
+           x="-1.0279108"
+           y="10.713252"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.79375px;font-family:'Droid Sans Mono';-inkscape-font-specification:'Droid Sans Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px">6</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.79375px;line-height:125%;font-family:'Droid Sans Mono';-inkscape-font-specification:'Droid Sans Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="-1.0279108"
+         y="9.1597481"
+         id="text3321"><tspan
+           id="tspan3319"
+           x="-1.0279108"
+           y="9.1597481"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.79375px;font-family:'Droid Sans Mono';-inkscape-font-specification:'Droid Sans Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px">5</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.79375px;line-height:125%;font-family:'Droid Sans Mono';-inkscape-font-specification:'Droid Sans Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="-1.0279108"
+         y="7.7899919"
+         id="text3317"><tspan
+           id="tspan3315"
+           x="-1.0279108"
+           y="7.7899919"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.79375px;font-family:'Droid Sans Mono';-inkscape-font-specification:'Droid Sans Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px">4</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.79375px;line-height:125%;font-family:'Droid Sans Mono';-inkscape-font-specification:'Droid Sans Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="-1.0279108"
+         y="4.5159402"
+         id="text3313"><tspan
+           id="tspan3311"
+           x="-1.0279108"
+           y="4.5159402"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.79375px;font-family:'Droid Sans Mono';-inkscape-font-specification:'Droid Sans Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px">3</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.79375px;line-height:125%;font-family:'Droid Sans Mono';-inkscape-font-specification:'Droid Sans Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="-1.0279108"
+         y="2.9624362"
+         id="text3309"><tspan
+           id="tspan3307"
+           x="-1.0279108"
+           y="2.9624362"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.79375px;font-family:'Droid Sans Mono';-inkscape-font-specification:'Droid Sans Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px">2</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.79375px;line-height:125%;font-family:'Droid Sans Mono';-inkscape-font-specification:'Droid Sans Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="-1.0279108"
+         y="1.4590451"
+         id="text3305"><tspan
+           id="tspan3303"
+           x="-1.0279108"
+           y="1.4590451"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.79375px;font-family:'Droid Sans Mono';-inkscape-font-specification:'Droid Sans Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px">1</tspan></text>
+    </g>
+    <g
+       id="pins"
+       transform="translate(0,-0.42522321)"
+       style="fill:#000000">
+      <line
+         fill="none"
+         stroke="#555555"
+         stroke-width="0.185208"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         x1="29.804369"
+         y1="51.132145"
+         x2="31.709368"
+         y2="51.132145"
+         id="pin_gnd"
+         style="fill:#000000" />
+      <line
+         fill="none"
+         stroke="#555555"
+         stroke-width="0.185208"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         x1="29.804369"
+         y1="54.203201"
+         x2="31.709368"
+         y2="54.203201"
+         id="pin_vcc"
+         style="fill:#000000" />
+      <line
+         fill="none"
+         stroke="#555555"
+         stroke-width="0.185208"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         x1="29.804369"
+         y1="52.632236"
+         x2="31.709368"
+         y2="52.632236"
+         id="pin_vm"
+         style="fill:#000000" />
+      <line
+         fill="none"
+         stroke="#555555"
+         stroke-width="0.185208"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         x1="29.804369"
+         y1="57.443844"
+         x2="31.709368"
+         y2="57.443844"
+         id="pin_standby"
+         style="fill:#000000" />
+      <line
+         fill="none"
+         stroke="#555555"
+         stroke-width="0.185208"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         x1="29.804369"
+         y1="58.847008"
+         x2="31.709368"
+         y2="58.847008"
+         id="pin_in1"
+         style="fill:#000000" />
+      <line
+         fill="none"
+         stroke="#555555"
+         stroke-width="0.185208"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         x1="29.804369"
+         y1="60.31699"
+         x2="31.709368"
+         y2="60.31699"
+         id="pin_in2"
+         style="fill:#000000" />
+      <line
+         fill="none"
+         stroke="#555555"
+         stroke-width="0.185208"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         x1="29.804369"
+         y1="61.753563"
+         x2="31.709368"
+         y2="61.753563"
+         id="pin_pwm"
+         style="fill:#000000" />
+      <line
+         fill="none"
+         stroke="#555555"
+         stroke-width="0.185208"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         x1="43.234661"
+         y1="55.074371"
+         x2="45.13966"
+         y2="55.074371"
+         id="pin_out1"
+         style="fill:#000000" />
+      <line
+         fill="none"
+         stroke="#555555"
+         stroke-width="0.185208"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         x1="43.234661"
+         y1="58.615692"
+         x2="45.13966"
+         y2="58.615692"
+         id="pin_out2"
+         style="fill:#000000" />
+    </g>
+  </g>
+</svg>
