@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "LED_Chain-rescue")(type "KiCad")(uri "${KIPRJMOD}/LED_Chain-rescue.kicad_sym")(options "")(descr ""))
+)
