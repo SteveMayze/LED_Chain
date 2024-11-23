@@ -4382,7 +4382,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm"
+		(property "Footprint" "LED_Chain:SO-16-N"
 			(at 60.96 54.61 0)
 			(effects
 				(font
@@ -4501,7 +4501,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm"
+		(property "Footprint" "LED_Chain:SO-16-N"
 			(at 162.56 137.16 0)
 			(effects
 				(font
@@ -8375,7 +8375,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm"
+		(property "Footprint" "LED_Chain:SO-16-N"
 			(at 162.56 110.49 0)
 			(effects
 				(font
@@ -8411,25 +8411,25 @@
 			)
 		)
 		(pin "1"
-			(uuid "1d8ccd07-0c4d-473c-9310-9980811cacf1")
+			(uuid "1d8ccd07-0c4d-473c-9310-9980811cacf2")
 		)
 		(pin "2"
-			(uuid "860997fb-24ec-4564-99bf-be1fcd0a9d84")
+			(uuid "860997fb-24ec-4564-99bf-be1fcd0a9d85")
 		)
 		(pin "3"
-			(uuid "92953c63-2122-48e1-9948-e419e327a8da")
+			(uuid "92953c63-2122-48e1-9948-e419e327a8db")
 		)
 		(pin "4"
-			(uuid "301b6871-8863-405f-95a5-b5c61de6d347")
+			(uuid "301b6871-8863-405f-95a5-b5c61de6d348")
 		)
 		(pin "5"
-			(uuid "f23ca3c3-59cd-4a2d-b151-ac7cbfcad935")
+			(uuid "f23ca3c3-59cd-4a2d-b151-ac7cbfcad936")
 		)
 		(pin "6"
-			(uuid "2f774c22-6d05-46e4-9528-7cd6ec5fe637")
+			(uuid "2f774c22-6d05-46e4-9528-7cd6ec5fe638")
 		)
 		(pin "7"
-			(uuid "5419462f-918b-47d0-b87a-0bfac69ab30a")
+			(uuid "5419462f-918b-47d0-b87a-0bfac69ab30b")
 		)
 		(pin "10"
 			(uuid "7140d1e2-80bd-4885-8583-e2c9d6d74f8d")
@@ -8453,10 +8453,10 @@
 			(uuid "1917628a-e493-459b-90ea-5c197d079b50")
 		)
 		(pin "16"
-			(uuid "271dcf90-9e90-4622-8d3b-bb1e82b2867a")
+			(uuid "271dcf90-9e90-4622-8d3b-bb1e82b2867b")
 		)
 		(pin "8"
-			(uuid "d99fcad0-43d6-4d45-ab16-aeacdf11f4d5")
+			(uuid "d99fcad0-43d6-4d45-ab16-aeacdf11f4d6")
 		)
 		(instances
 			(project "LED_Chain"
